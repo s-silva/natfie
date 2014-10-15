@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+
+<html><head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Natfie</title>
+	
+	<link href="code/css/default.css" rel="stylesheet" type="text/css"/>
+	<link rel="stylesheet" href="css/main/print.css" type="text/css" media="print"/>
+	<script type="text/javascript" src="code/js/maincom.js"></script>
+
+</head><body onload="home_init();">
+
+	<script language="JavaScript">
+		window.onresize = home_onresize;
+		window.onfocus = home_onfocus;
+		window.onblur = home_onblur;
+	</script>
+	
+	<div id="divdataset1" style="display: none;" data-ecroomid="<userenv.croomid>" data-eroomsign="<userenv.croomsign>" data-elastmsgtime="<userenv.lastmsgtime>" data-eavailability=<userenv.availability>></div>
+	<div id="divdataset2" style="display: none;" data-uid="<data.user.id>" data-ulid="<data.user.lid>" data-uname="<data.user.name>"></div>
+	<div id="divdatasetfeed" style="display: none;" data-lfid="<data.user.lfid>" data-lftimeid="<data.user.lftimeid>" data-lptimeid="<data.user.lptimeid>"></div>
+	
+	<div class="overlaymain overlayfull" id="windowoverlaymain" style="display: none; background: black;">
+		<div class="overlaymain_ct">
+			<div class="overlaymain_btn" onclick="overlay_switchlights()">Lights</div>
+			<div class="overlaymain_btn" onclick="overlay_close()">Hide</div>
+		</div>
+	</div>
+	
+	<div class="overlaymain overlayfull" id="windowoverlaymaind" style="display: none;"></div>
+
+
+	<div id="topbar" class="themecolorv1">
+		<div id="topbar_left">
+			<!-- buttons -->
+			<a href="javascript: show_mitem('friendsearchfull'); peoplesearchbox_init();"><div class="topbutton themecolorv2" id="toptb1" style="margin-left: 0px; "><div style="background: url('images/sheet.png') no-repeat -120px -1px; width: 15px; height: 15px; margin: 4px 0 0 0;"></div> </div>     </a>
+			<a href="javascript: show_mitem('newpostfull', 1);"><div class="topbutton themecolorv2" id="toptb1" style="margin-left: 5px; font-size: 18px; ">+</div>     </a>
+			<a href="./"><div class="topbutton themecolorv2" id="toptb1">Home</div>     </a>
+			<a href="pu<data.user.id>"><div class="topbutton themecolorv2" id="toptb2">Profile</div>  </a>
+			<a href="messages"><div class="topbutton themecolorv2" id="toptb4">Messages</div> </a>
+			<a href="bu<data.user.id>"><div class="topbutton themecolorv2" id="toptb4">Blog</div>   </a>
+			<!--<div class="topbutton themecolorv2" id="toptb3" style="cursor: pointer;" onclick="show_mitem('menutopyours');">More
+				<div style="position: relative; top: 5px; left: -10px;">
+				<div class="menutopyour themecolorv1" id="menutopyours" style="visibility: hidden;">
+					<a href="friends"><div class="menutopitem themecolorv2">Friends</div></a>
+					<a href="albums"><div class="menutopitem themecolorv2">Photos</div></a>
+				</div>
+				</div>
+			
+			</div>-->
+			
+			<!--<a href="#"><div class="topbutton" id="toptb3">Local</div>    </a>
+			<a href="javascript: nstatus_display('hello world!');"><div class="topbutton" id="toptb4">Global</div>   </a> -->
+			
+			<div class="topbarspace" style="width: 15px;"></div>
+			
+			<a href="javascript:notifications_menu(1)">
+				<div class="topicon" id="icon_messages" style="background: url('images/sheet.png') no-repeat -188px -48px;"></div>   
+				<div class="topiconnew" id="icon_new_friends" data-nvalue='0'></div>
+			</a>
+			
+			<a href="javascript:notifications_menu(2)">
+				<div class="topicon" id="icon_messages" style="background: url('images/sheet.png') no-repeat -214px -48px;"></div>   
+				<div class="topiconnew" id="icon_new_messages" data-nvalue='0'></div>
+			</a>
+			
+			<a href="javascript:notifications_menu(3)">
+				<div class="topicon" id="icon_tags" style="background: url('images/sheet.png') no-repeat -192px -24px;"></div>
+				<div class="topiconnew" id="icon_new_tags" data-nvalue='0'></div>
+			</a>
+			
+			<a href="javascript:notifications_menu(4)">
+				<div class="topicon" id="icon_events" style="background: url('images/sheet.png') no-repeat -164px -49px;"></div>
+				<div class="topiconnew" id="icon_new_events" data-nvalue='0'></div>
+			</a>
+			
+			<a href="javascript:notifications_menu(5)">
+				<div class="topicon" id="icon_notifications" style="background: url('images/sheet.png') no-repeat -164px -24px;"></div>
+				<div class="topiconnew" id="icon_new_notifications" data-nvalue='0'></div>
+			</a>
+			
+			
+			
+			
+			
+			
+		</div>
+		
+		
+		<div id="topbar_right">
+			<h3><a href="javascript:show_mitem('menu_user')"><data.user.name></a></h3>
+			<h3 style="padding: 0 3px 0 3px; opacity: 0.7; filter:alpha(opacity: 70)">|</h3>
+			<h1><a href="./">Natfie</a></h1>
+			<h2 style="color: #bbbbbb;"> Alpha</h2>
+		</div>
+		
+		<div class="topmenu menuback" id="menu_user">
+		
+			<a href="settings.general"><div class="menubox" id="muser_settings">Account Settings</div></a>
+			<a href="#"><div class="menubox menuodd" id="muser_filters">Filters/Blocking</div></a>
+			<a href="logout.php"><div class="menubox" id="muser_logoff">Log Out</div></a>
+		</div>
+		
+		<div class="nmenu" id="notify">
+			<div class="notifytoph"></div>
+			<div id="notifyd"></div>
+			<div class="nmenumore"><div class="nmenumoretext">Notifications</div></div>
+		</div>
+		
+	</div>
+	
+	
+	
+	<div class="statusnotification" id="statusnotification" onclick="javascript: nstatus_hide();">The request has been sent.</div>
+	
+	
+	<div class="newpostfull" id="newpostfull">
+		<div class="newpostbackt" onclick="javascript: shset_hide('newpostfull', 1);">
+			+
+		</div>
+		<div class="newpostbackd">
+		
+			<div class="newpost_title" id="newpostptitle">New Post</div>
+			
+			<div class="newpost_content">
+				<div class="newpost_content_left" id="newpostpsubox" style="display: none;">
+					<div class="newpost_content_dp"><div class="boxpic" style="background: url('images/test/dp.jpg');"></div></div>
+				</div>
+					<div class="expandingArea" style="margin-left: 0px; min-height: 35px;" id="newpostpexpt">
+							<pre><span></span><br></pre>
+							<textarea id="newpostptdata" class="newpost_textarea" autocomplete="off" placeholder="Write your post here..."></textarea>
+					</div>
+				<div class="newpost_content_right">
+
+				</div>
+				
+				<div class="newpost_ctdata" id="newpost_ctdata" style="display: none;">
+					<div class="newpost_ctdata_close" onclick="newpost_ctd_clear();"><div style="background: url('images/sheet.png') no-repeat -154px -52px; width: 8px; height: 8px; margin: 4px 4px;"></div></div>
+					<center><div class='newpost_ctimgoverlay'><div class="newpost_ctimgoverlayi" id='newpost_ctimgoverlay'>
+						
+					</div> <div class='newpost_ctimgoverlayilb' id='newpost_ctimgoverlayilb'></div> <div class='newpost_ctimgoverlayirb' id='newpost_ctimgoverlayirb'></div> </div></center>
+					<center><div style="padding: 5px 10px 5px 10px;" id="newpost_ctdatai"></div></center>
+					
+				</div>
+
+				<div class="newpost_bottombars" id="newpostpbb" style="margin-left: 0px;">
+					<div class="newpost_blue_button">Add Photo</div>
+					<div class="newpost_blue_button" onclick="newpost_switchmode()" id="newpostpswitch" data-cmode='0'>Send To</div>
+					<div style="clear:both;"></div>
+				</div>
+				
+				<div style="clear:both;"></div>
+				
+				<div class="newpost_finalbars">
+					<!--<div class="newpost_final_left">
+						<div class="newpost_checkfull">
+							<div class="newpost_check" style="background: url('images/sheet.png') no-repeat -155px 0px;" title="Post to your blog"></div>
+							<div class="newpost_check" style="background: url('images/sheet.png') no-repeat -180px 0px;" title="Post to Twitter"></div>
+							<div class="newpost_check" style="background: url('images/sheet.png') no-repeat -206px 0px;" title="Post to Facebook"></div>
+							<div class="newpost_check" style="background: url('images/sheet.png') no-repeat -232px 0px;" title="Post to Google+"></div>
+						</div>
+					</div>-->
+					
+					<div class="newpost_final_right">
+						<div class="general_button button_green" style="float: right; padding: 0px 40px 0px 40px;" onclick="newpost_send(function(){hide_item('newpostfull');}, 0)";>Publish</div>
+						<div class="general_button button_white" onclick="javascript: hide_item('newpostfull');" style="float: right; padding: 0px 40px 0px 40px;">Cancel</div>
+						
+					</div>
+					<div style="clear:both;"></div>
+				</div>
+				<div style="clear:both;"></div>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	<div class="sendmsgbox_full" id="sendmsgbox_full">
+		<div class="sendmsgbox_title">Send Message</div>
+		
+		<div class="sendmsgbox_picset">
+			<div class="sendmsgbox_picuser" id="sendmsgbox_picuser" style="margin-right: 4px;"></div>
+			<div class="sendmsgbox_picadd" style='position: relative;' onclick="friendsearch_showpopup(this, 1, 'sendmsgbox_addfriend');"><div style="padding: 10px"><div class="sendmsgbox_addtitle">+</div></div></div>
+			<div style="clear:both;"></div>
+		</div>
+		
+		<div class="sendmsgbox_input">
+			<div class="expandingArea" style="min-height: 115px;">
+				<pre><span></span><br></pre>
+				<textarea id="newmsg_txt" class="newpost_textarea" autocomplete="off" placeholder="Write your message here..."></textarea>
+			</div>
+		</div>
+		
+		<div style="clear:both;"></div>
+		<div class="sendmsgbox_bottombar">
+			<div class="general_button button_green" style="float: right; padding: 0px 40px 0px 40px;" onclick="sendmsgbox_send();">Send</div>
+			<div class="general_button button_white" onclick="javascript: fadeout_item('sendmsgbox_full');" style="float: right; padding: 0px 40px 0px 40px;">Cancel</div>
+			<div style="clear:both;"></div>
+		</div>		
+		<div style="clear:both;"></div>
+	
+	
+	</div>
+	
+	
+	<div class="friendsearchfull" id="friendsearchfull">
+		<div class="friendsearchbackt" onclick="javascript: shset_hide('friendsearchfull', 1);">
+			<div style="background: url('images/sheet.png') no-repeat -104px -1px; width: 15px; height: 15px; margin: 7px 7px 0 7px;"></div> 
+		</div>
+		<div class="friendsearchbackd">
+		
+			<div class="friendsearch_title">Search Friends/People</div>
+			
+			<div class="friendsearch_content">
+				<div class="friendsearch_inputborder"><input type="text" id="mpeoplesearchinput" class="friendsearch_text"></div>
+
+				<div class="friendsearch_people">
+					<div id="mpeoplesearchoutput">
+					</div>
+					
+					<div style="clear:both;"></div>
+				</div>
+				
+				<div style="clear:both;"></div>
+				
+				<a href="friends"><div class="friendsearch_finalbars">
+					<div class="friendsearch_final_more">More</div>
+					<div style="clear:both;"></div>
+				</div></a>
+				<div style="clear:both;"></div>
+			</div>
+		</div>
+	</div>
+	
+	<div id='unbind_owner'></div>
+	
+	<div class="tagcomplete_box" id="tagcomplete_box">
+		<div class='tagcomplete_ct'>
+		</div>
+	</div>
+	
+	<div class='msgexp_typebox' id='popupcard_msg_tbox' style="display: none;"></div>
+	<div class='spw_fullout' id='popupcard_msg_out' style="display: none;">
+		<div class="msgexp_box" style="padding: 0 0 240px 0;" id="popupcard_msg"></div>
+	</div>
+	
+	<!-- full photo display -->
+	<div class='pbf_out' id='pbf_out' onclick='fullphoto_close();' style='display: none;'></div>
+	<div class='pbf_ct' id='pbf_ct' style='display: none; width: 100%'><div id='pbf_ct_out'><div id='pbf_ct_inner'>
+		<div class='pbf_pinfo' id='pbf_pinfo'>
+			<div class='pbf_pinfo_dp' id='pbf_pinfo_dp'><img src="data/ui1wk4x8/dp/1.jpg" width='58px' onerror="failsafe_img(this, 2);"/></div>
+			<div class='pbf_pinfo_t'>
+				<div class='pbf_pinfo_tuser' id='pbf_pinfo_tuser'>Sharon Levy</div>
+				<div class='pbf_pinfo_ttitle' id='pbf_pinfo_ttitle'>Surf Capital</div>
+				<div class='pbf_pinfo_tloc' id='pbf_pinfo_tloc'>Notherns Beach, Spain</div>
+			</div>
+		</div>
+		
+		<table width='100%'><tbody><tr>
+		
+			<td onclick='fc_post_switch_photo(this);' id='pmmd_pdb' style="position: relative;">
+					
+				<div class='ptgpictc' id='ptgptc'><div class='ptgpictcb' id='ptgbtagstart'>Tag</div><div class='ptgpictcb' id="ptgbtagview">View</div><div class='ptgpictcb' id='ptgbtagedit'>Edit</div><div class='ptgpictcb' id='ptgbtageffects'>Effects</div></div>
+			
+				<div class='pbf_pc' id='pbf_pc' style='width: 100%; position: relative;'>
+					
+					<div id='pbf_pic' style='width: 100%; position: absolute; top: 0px; left: 0px; bottom: 100%;'></div>
+					<div id='pbf_pic2' style='width: 100%; position: absolute; top: 0px; left: 0px; bottom: 100%;'></div>
+				</div>
+				
+			
+				<div class='pbf_thumbs_o' id='pbf_thumbs_o'><div class='pbf_thumbs'><div class='pbf_thumb_in'><div class='pbf_thumb_hs'>
+					
+				</div></div></div></div>
+			
+			</td>
+			<td valign='top' align='right' style='width: 25%; max-width: 450px;'>
+				<div class='pbf_ns' id='pbf_ns'>
+					<table style='height: 100%; width:100%; border-collapse: collapse;'><!--<tr><td height='40px'>
+					
+						
+						Mark . Note . Share . Delete . Edit . <a href='javascript: fullphoto_fullscreen();'>Report</a>
+						</td></tr>--><tr><td valign='top'>
+						
+						<div class="spw_extradata_b" id="spw_tagedt"></div>
+						<div class='pbf_nsn' id='pbf_nsn'>
+						</div>
+					
+					</td></tr><tr><td style='height: 80px;'>
+						<div class='pbf_wnote_o'><div id="pbf_wnote" class='pbf_wnote' contentEditable='plaintext-only'></div></div>
+					</td></tr></table>
+				
+				</div>
+			</td>
+		</tr></tbody></table>
+	</div></div></div>
+	
+	<div class='spw_fullout' id='spwout' style="display: none;">
+	<div class="spw_full" id="spw" style="display: none;"><div class="spw_content">
+	
+		<div>
+			<div style="float: left; margin-right: 10px; margin-top: 4px;">
+				<div class="boxpic" id='spwdvdp' style="background: url('images/test/dp.jpg');"> </div>
+			
+			</div>
+			<div style="float: left;">
+				<div class="spw_title" id='spwdvtitle'></div>
+				<div class="spw_user" id='spwdvuname'></div>
+				<div class="spw_text"  id='spwdvdsc'></div>
+			</div>
+			
+			<div style="float: right;">
+				
+				<div class="spw_btnt" onclick="javascript: post_hideshow();"><div style="background: url('images/sheet.png') no-repeat -155px -45px; width: 7px; height: 2px; margin: 10px 0 0 4px;"></div></div>
+				<div class="spw_btnt" onclick="javascript: post_close();"><div style="background: url('images/sheet.png') no-repeat -154px -52px; width: 8px; height: 8px; margin: 4px 4px;"></div></div>
+				
+			</div>
+			
+			<div style="clear:both;"></div>
+		</div>
+		
+		<div class="spw_data" id="spwd"></div>
+		<div class="spw_data_bar" id="spwdbar" style="display: none;"></div>
+		
+		<div class="spw_status">
+			<div class="spw_sfl">
+				<!--<a class="spw_btn">View Notes</a>-->
+				<div class="spw_statuslist"></div>
+				
+			</div>
+			
+			<!--<div class="spw_sfr">
+				<div class="spw_cdsc">Chart Positions:</div>
+				<div class="spw_cbtn">DnB: 4th</div>
+				<div class="spw_cbtn">Dance: 102nd</div>
+				<div class="spw_cbtn">Essential: 24th</div>
+			</div>-->
+			
+		</div>
+		
+		<div style="clear:both;"></div>
+		
+		<div class="spw_extradata" id="spw_edt"></div>
+		<div class="spw_comments"></div>
+	</div></div>
+
+	</div>
+	
+	<!-- general full dialog (fullscreen for photo uploads etc.) -->
+	
+	<div class="fulldialogbox" id="overlayfulldialog" style="display: none;">
+		<div class="fulldialogbox_toptitle">
+		
+			
+			<button class="fulldialogbox_toptitle_upbtn" title='Upload' onclick='photoup_uploadset();'>
+				<div style="background: url('images/sheet.png') no-repeat -242px -109px; width: 26px; height: 27px; margin: 0px 0 0 5px;"></div>
+			</button>
+			
+			<div class="fulldialogbox_toptitle_dt">
+				<div class="fulldialogbox_toptitle_t" id="photoup_albumtitle" onclick='geditinplace(this, 0);'>Album Title</div>
+				<abbr>4:29AM, 26th April, 2012</abbr><br/>
+				<span class='loctag'  onclick='geditinplace(this, 1);'>Location</span>
+			</div>
+			
+			<div class="fulldialogbox_toptitle_ctr">
+				<div class="fulldialogbox_toptitle_ctrbtn" title="Select an existing album to upload to."><div style="background: url('images/sheet.png') no-repeat -202px -132px; width: 23px; height: 18px; margin: 7px 0 0 3px;"></div></div>
+				<div class="fulldialogbox_toptitle_ctrbtn" title="Add more photos."><div style="background: url('images/sheet.png') no-repeat -228px -134px; width: 12px; height: 12px; margin: 9px 0 0 9px;"></div></div>
+				<div class="fulldialogbox_toptitle_ctrbtn" title="Privacy mode."><div style="background: url('images/sheet.png') no-repeat -270px -1px; width: 13px; height: 14px; margin: 8px 0 0 8px;"></div></div>
+			</div>
+			
+			<div class="fulldialogbox_toptitle_dscc">
+				<textarea placeholder='Write album description here...'></textarea>
+			</div>
+			<div style="clear:both;"></div>
+			<div class="overlayfulldialog_ico">
+				<div class="overlayfulldialog_ic" id="overlayfulldialog_ic">
+				
+				</div>
+			</div>
+			<div style="clear:both;"></div>
+		</div>
+	</div>
+	
+	<!-- general dialog -->
+	
+	<div class="dialogbox" id="overlaydialog" style="display: none;">
+		<div class="dialogbox_title"></div>
+		<div class="dialogbox_titletext" id="gendialogbox_titletext">Hide Content</div>
+		<div style='height: 30px;'></div>
+		<div class="dialogbox_content">
+		<div id="generaldialog_data">
+		
+			<div style="padding: 0 5px 0 30px; float: left;">
+				From <a href="#" class="userpage" onmouseover="vusr(this, 'uvkhjYh');">James Walker</a><br/>
+				
+				<div style="padding: 0 30px 0 30px;">
+					<label><input type="checkbox">Status</label><br/>
+					<label><input type="checkbox">Photos</label><br/>
+				</div>
+			</div>
+			<div style="padding: 0 5px 0 30px; float: left;">
+				From <a href="#" class="userpage" onmouseover="vusr(this, 'uqkhjYh');">Cars</a><br/>
+				
+				<div style="padding: 0 30px 0 30px;">
+					<label><input type="checkbox">Status</label><br/>
+					<label><input type="checkbox">Photos</label><br/>
+				</div>
+			</div>
+			<div style="clear:both;"></div>
+		</div>
+		<div class="dialogbox_footer">
+			<button id="gendialogbox_applybtn" class="general_settingbuttonblue" style="float: right; padding: 0px 40px 0px 40px;">Apply</button>
+			<button class="general_settingbuttonwhite" style="float: right; padding: 0px 40px 0px 40px;" onclick="overlaydialog_close();">Cancel</button>
+			<div style="clear:both;"></div>
+		</div>
+		</div>
+	</div>
+	
+	<div class="userdetailsbox" id="vusrdbox" style="visibility: hidden;">
+		<div class="userdetailspoint_lt" id="vusrdboxplt"></div>
+		<div class="userdetailspoint_rt" id="vusrdboxprt"></div>
+		<div class="userdetailsboxc">
+			<div class="userdetailsboxpic">
+				<img id="vusrboximg" src="images/test/jamie.jpg" onerror="failsafe_img(this, 1);"/>
+			</div>
+			
+			<div class="userdetailsboxtxt">
+				<div class="userdetailsboxtn" id="vusrboxname">Jamie Sanderson</div>
+				<div class="userdetailsboxtd" id="vusrboxdsc">Designer at UFLIQ</div>
+				<div class="userdetailsboxtm" id="vusrboxmutual">17 Mutual friends</div>
+				
+				<div id="vusrsearchbox" class="friendsearch_bx" style="margin-top: 3px;">
+					<div class="fsbx_btn"><div class="fsbx_btnm2"></div></div>
+					<div class="fsbx_btn"><div class="fsbx_btnm3"></div></div>
+					<div class="fsbx_btn"><div class="fsbx_btnm4"></div></div>
+					<div class="fsbx_btn"><div class="fsbx_btnm5"></div></div>
+					<div class="fsbx_btn"><div class="fsbx_btnm6"></div></div>
+					<div style="clear:both;"></div>
+				</div>
+			</div>
+			<div style="clear:both;"></div>
+		</div>
+		<div class="userdetailspoint_lb" id="vusrdboxplb"></div>
+		<div class="userdetailspoint_rb" id="vusrdboxprb"></div>
+	</div>
+	
+	<div class="menug_content" id="quicksearchbox" style="padding: 4px; min-width: 230px; max-width: 400px; position: absolute; overflow: hidden;">
+		
+		<div id="mquickfsearch_content"></div>
+		
+		<div style="clear:both;"></div>
+		
+		<div style="padding: 5px 5px 7px 5px;">
+		
+			<div class="idefinputborder" style="width: 100%; height: 33px;">
+				<div style="float: left;"><input type="text" id="mquickfsearch_input" class="quickfriendsearch_text"></div>
+				<div style="padding: 3px;"><div class="quickfriendsearch_searchbox"><div style="background: url('images/sheet.png') no-repeat -104px -1px; width: 15px; height: 15px; margin: 0 0 0 0;"></div></div></div>
+			</div>
+			
+		</div>
+		
+		<div style="clear:both;"></div>
+	</div>
+		
+	
+	<div class="popupcard_main" id="popupcard_main"></div>
+	<div class="popupcard_main" style="padding: 3px 3px 0px 3px; " id="popupcard_map"></div>
+	
+
+	
+	<div style='position: relative;'><div class="popupcard_mark" style="padding: 3px 3px 0px 3px; " id="popupcard_mark"></div></div>
+
+	<div class="sideicon" id="sideicon_chat" onclick="javascript: showhide_chat('chatbox');"><div style="cursor: pointer; background: url('images/sheet.png') no-repeat -116px -52px; width: 25px; height: 25px; margin: 5px 4px;"></div></div>
+	
+	
+	<div class="chatbox" id="chatbox">
+		<div class="chatbox_top themecolorv1" id="cboxtop">
+		
+			<div id="chat_friendgrid"></div>
+			
+			<div style="clear:both;"></div>
+			
+			<div class="chatbox_title">
+				<div style="float: left;" id="chatbox_cusers"></div>
+				
+				<div style="float: right;"><a href="javascript: show_mitem('menu_chat_availability');" style="font-weight: normal;"><span id="chatntf_availabilitytxt"><userenv.selfavtext></span><div id="chatntf_availability" class="chatntf_availability" style="background: #<userenv.selfavcolor>; margin-top: 6px; margin-left: 3px;"></div></a>
+					<div style="position: relative; left: -50px;">
+						<div class="menug_content" id="menu_chat_availability" style="width: 90px; height: 130px; position: absolute; overflow: hidden;">
+						
+							<div class="menug_item" style="float: left;" onclick="availability_set(1);"><div style="width: 29px; height: 18px; background: #99cc66; float: left; margin: 3px 5px 0 0;"></div>Online</div>
+							<div class="menug_item" style="float: left;" onclick="availability_set(2);"><div style="width: 29px; height: 18px; background: #ff6633; float: left; margin: 3px 5px 0 0;"></div>Busy</div>
+							<div class="menug_item" style="float: left;" onclick="availability_set(3);"><div style="width: 29px; height: 18px; background: #ffcc00; float: left; margin: 3px 5px 0 0;"></div>Away</div>
+							<div class="menug_item" style="float: left;" onclick="availability_set(4);"><div style="width: 29px; height: 18px; background: #999999; float: left; margin: 3px 5px 0 0;"></div>Hidden</div>
+							<div class="menug_item" style="float: left;" onclick="availability_set(0);"><div style="width: 29px; height: 18px; background: #4d4d4d; float: left; margin: 3px 5px 0 0;"></div>Offline</div>
+							
+						</div>
+					</div>
+				</div>
+				
+				
+			
+			</div>
+			
+			<div style="clear:both;"></div>
+		</div>
+
+		<div id="chatcontent" style="height: 80%;">
+		<table border="none" style="height: 100%; border-collapse:collapse;">
+		<tr><td valign="bottom">
+			<div class="chatbox_chattext" id="chattext">
+				
+
+			</div>
+		</td></tr><tr><td style="height: 78px;">
+		<div id="chatbox_input_border" style="margin-left: 4px;">
+	
+			<textarea id="chattextinput" class="textareachatbox" autocomplete="off"></textarea>
+			
+			<div class="chattext_button_set">
+				<div class="chattext_buttons" onclick="javascript: emotboxshow();"><div style="padding: 8px;"><div style="width: 10px; height: 11px; background: url('images/sheet.png') no-repeat -142px -52px;"></div></div></div>
+				<div class="chattext_buttons" onclick="javascript: show_mitem('quicksearch_chat'); friendsearchbox_init();"><div style="padding: 8px;"><div style="width: 10px; height: 11px; background: url('images/sheet.png') no-repeat -104px -59px;"></div></div></div>
+			</div>
+		</div>
+		
+					
+				<div style="position: relative;">
+					<div class="menug_content" id="quicksearch_chat" style="right: 15px; bottom: 10px; width: 230px; position: absolute; overflow: hidden;">
+					
+						<div id="mfriendsearch_content">
+						
+						</div>
+						
+						<div style="clear:both;"></div>
+						
+						<div style="padding: 5px 5px 7px 5px;">
+						
+							<div class="idefinputborder" style="width: 100%; height: 33px;">
+								<div style="float: left;"><input type="text" id="mfriendsearchinput" class="quickfriendsearch_text"></div>
+								<div style="padding: 3px;"><div class="quickfriendsearch_searchbox"><div style="background: url('images/sheet.png') no-repeat -104px -1px; width: 15px; height: 15px; margin: 0 0 0 0;"></div></div></div>
+							</div>
+							
+						</div>
+						
+						
+						
+						<div style="clear:both;"></div>
+					</div>
+				</div>
+				
+				<div style="position: relative;">
+					<div class="menug_content" id="emotbox" style="right: 15px; bottom: 44px; width: 270px; position: absolute; overflow: hidden;">
+					
+						<div style="padding: 3px;">
+							<div class="menueb_btn" onclick="emotboxsd(1);">Manage</div>
+							<div class="menueb_btn" onclick="emotboxsd(2);">Emoticons</div>
+							<div class="menueb_btn" onclick="emotboxsd(3);">Openers</div>
+						</div>
+						
+						<div style="clear:both;"></div>
+						
+						<div id="emotboxdata" class="menuebdata" style="display: none;">
+							<ol>
+								<li><div onclick="emotboxsetv(this);">Who lies more: men or women?</div></li>
+								<li><div onclick="emotboxsetv(this);">Nice shoes!</div></li>
+								<li><div onclick="emotboxsetv(this);">You should come talk to me.</div></li>
+								<li><div onclick="emotboxsetv(this);">What’s one thing you’ve wanted to tell me, but haven’t?</div></li>
+								<li><div onclick="emotboxsetv(this);">What about the game last night!</div></li>
+								<li><div onclick="emotboxsetv(this);">Oh! Sorry for bumping into you.</div></li>
+								<li><div onclick="emotboxsetv(this);">Hmm, are you friendly?</div></li>
+								<li><div onclick="emotboxsetv(this);">Can you take a photo for me to send a friend?</div></li>
+								<li><div onclick="emotboxsetv(this);">What three words best describe you?</div></li>
+								<li><div onclick="emotboxsetv(this);">Can you help me open this bottle?</div></li>
+							</ol>
+						</div>
+					
+						<div style="padding: 3px;">
+							<div class="menuebe" onclick="emotboxset(':)');"><div class="menuebei" style="background-position: -1px -77px;"></div></div>
+							<div class="menuebe" onclick="emotboxset(':D');"><div class="menuebei" style="background-position: -16px -77px;"></div></div>
+							<div class="menuebe" onclick="emotboxset(':P');"><div class="menuebei" style="background-position: -31px -77px;"></div></div>
+							<div class="menuebe" onclick="emotboxset(';)');"><div class="menuebei" style="background-position: -46px -77px;"></div></div>
+							<div class="menuebe" onclick="emotboxset(':O');"><div class="menuebei" style="background-position: -61px -77px;"></div></div>
+							<div class="menuebe" onclick="emotboxset('xD');"><div class="menuebei" style="background-position: -76px -77px;"></div></div>
+							<div class="menuebe" onclick="emotboxset('=D');"><div class="menuebei" style="background-position: -91px -77px;"></div></div>
+							<div class="menuebe" onclick="emotboxset('&gt;.&lt;');"><div class="menuebei" style="background-position: -106px -77px;"></div></div>
+							<div class="menuebe" onclick="emotboxset('=.=');"><div class="menuebei" style="background-position: -121px -77px;"></div></div>
+							<div class="menuebe" onclick="emotboxset('&lt;.&lt;');"><div class="menuebei" style="background-position: -136px -77px;"></div></div>
+							<div class="menuebe" onclick="emotboxset('&gt;.&gt;');"><div class="menuebei" style="background-position: -151px -77px;"></div></div>
+							                 
+							<div class="menuebe" onclick="emotboxset('B-|');"><div class="menuebei" style="background-position: -166px -77px;"></div></div>
+							<div class="menuebe" onclick="emotboxset('B-)');"><div class="menuebei" style="background-position: -181px -77px;"></div></div>
+							<!--<div class="menuebe" onclick="emotboxset('B-D');"><div class="menuebei" style="background-position: -196px -77px;"></div></div>-->
+							<div class="menuebe" onclick="emotboxset('o.O');"><div class="menuebei" style="background-position: -211px -77px;"></div></div>
+							<div class="menuebe" onclick="emotboxset(':ninja:');"><div class="menuebei" style="background-position: -226px -77px;"></div></div>
+							<div class="menuebe" onclick="emotboxset(':/');"><div class="menuebei" style="background-position: -241px -77px;"></div></div>
+							<div class="menuebe" onclick="emotboxset(':(');"><div class="menuebei" style="background-position: -1px   -92px;"></div></div>
+							<div class="menuebe" onclick="emotboxset(':\'(');"><div class="menuebei" style="background-position: -16px  -92px;"></div></div>
+							<div class="menuebe" onclick="emotboxset(':@');"><div class="menuebei" style="background-position: -31px  -92px;"></div></div>
+							<div class="menuebe" onclick="emotboxset(':$');"><div class="menuebei" style="background-position: -46px  -92px;"></div></div>
+							<div class="menuebe" onclick="emotboxset(';_;');"><div class="menuebei" style="background-position: -61px  -92px;"></div></div>
+							                  
+							<div class="menuebe" onclick="emotboxset('^^');"><div class="menuebei" style="background-position: -76px  -92px;"></div></div>
+							<div class="menuebe" onclick="emotboxset(':x');"><div class="menuebei" style="background-position: -91px  -92px;"></div></div>
+							<div class="menuebe" onclick="emotboxset('&lt;3');"><div class="menuebei" style="background-position: -106px -92px;"></div></div>
+							<div class="menuebe" onclick="emotboxset('&lt;\/3');"><div class="menuebei" style="background-position: -121px -92px;"></div></div>
+							<!--<div class="menuebe" onclick="emotboxset('xD');"><div class="menuebei" style="background-position: -136px -92px;"></div></div>-->
+							<div class="menuebe" onclick="emotboxset(':grin:');"><div class="menuebei" style="background-position: -151px -92px;"></div></div>
+							<div class="menuebe" onclick="emotboxset('(y)');"><div class="menuebei" style="background-position: -166px -92px;"></div></div>
+							<div class="menuebe" onclick="emotboxset('(n)');"><div class="menuebei" style="background-position: -181px -92px;"></div></div>
+							<div class="menuebe" onclick="emotboxset(':&gt;&lt;:');"><div class="menuebei" style="background-position: -196px -92px;"></div></div>
+							<div class="menuebe" onclick="emotboxset('8|');"><div class="menuebei" style="background-position: -211px -92px;"></div></div>
+							<div class="menuebe" onclick="emotboxset('8)');"><div class="menuebei" style="background-position: -226px -92px;"></div></div>
+							<div class="menuebe" onclick="emotboxset(':|');"><div class="menuebei" style="background-position: -241px -92px;"></div></div>
+							<div class="menuebe" onclick="emotboxset(':*');"><div class="menuebei" style="background-position: -256px -92px;"></div></div>
+							                                                                          
+						</div>
+						<div style="clear:both;"></div>
+					</div>
+				</div>
+		</td></tr>
+		</table>
+		
+		</div>
+	</div>
+	
+	<div class="chatntf" id="chatntf" data-ccount='0' data-maxt='2'>
+
+	</div>
+	
+	<form name='ptgform' onsubmit='javascript: ptg_add(); return false;'>
+		<div class='ptgbox' id='ptgg1'><div class='ptgboxtop'></div><div class='ptgboxtext' id='ptgg1c'>Lin Hun</div></div>
+	<div style='visibility: hidden; height: 0; overflow: hidden;'><input type='submit' id='submit' name='addtag'/></div></form>
+	
+	<canvas id="canvas_photofx" style="position: absolute; left: 0; top: 0; display: none; z-index: 100000000;"></canvas>
+	
+	<!--<div id="vg" style="position: absolute; width: 20px; height: 20px; z-index: 13400000; background: red; left: 0px; top: 0px;"></div>-->
+
+	
+	<footerbar.content>
+	
+	<!-- content -->	
+	
+	<div style="height: 30px"></div>
+	
+	
+	<div id="pagemaincontent">
+	<main.content>
+
+	</div>
+	<div style="clear:both;"></div>
+
+	<script>
+	
+	</script>
+
+</body></html> 

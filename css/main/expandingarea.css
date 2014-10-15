@@ -1,0 +1,52 @@
+.expandingArea {
+	position: relative;
+	background: #fff;
+	border: 1px solid #d5d5d5;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	padding: 0;
+}
+
+.expandingArea > textarea,
+.expandingArea > pre
+{
+	padding: 5px;
+	border: none;
+	background: transparent;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	outline: 0;
+	line-height: 150%;
+	font: 11px "lucida grande",tahoma,verdana,arial,sans-serif; /*10pt "Calibri", helvetica, sans-serif; */
+}
+.expandingArea > textarea
+{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+	height: 35px;
+	outline: 0;
+}
+.expandingArea.active > textarea
+{
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	resize: none;
+	outline: 0;
+}
+.expandingArea > pre
+{
+
+	margin: 0;
+	display: none;
+}
+.expandingArea.active > pre
+{
+	display: block;
+	/*visibility: hidden;*/
+}

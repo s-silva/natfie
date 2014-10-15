@@ -1,0 +1,76 @@
+div.feedc_pomiddleb
+{
+	font: 16px "Segoe UI", Helvetica, sans-serif;
+	border: none;
+}
+
+div.feedc_poout
+{
+	background: #ffffff;
+	-moz-border-radius:4px;
+	border-radius: 4px;
+	-moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.6);
+	margin-bottom: 5px;
+}
+
+div.feedc_picm img
+{
+	width: 100%;
+}
+
+div.feedc_picb
+{
+	width: 100%;
+	float: none;
+	padding: 0;
+	margin: 20px 0 0 0;
+}
+
+div.feedc_picm 
+{
+    width: 100%;
+	height: 0;
+	padding-bottom: 43%;
+}
+
+div.feedc_potop_c
+{
+	margin: 0 0 0 0;
+	
+}
+
+div.feedc_potop_t
+{
+	margin: 20px 0 0 10px;
+}
+
+div.feedc_potop_ctr
+{
+	margin: 0 0 0 10px;
+}
+
+div.feedc_potop_dp
+{
+	margin: 10px 0 0 10px;
+}
+
+
+div.feedc_poin
+{
+	padding: 0;
+}
+
+
+div.feedc_potitle
+{
+	margin: 0 0 0 60px;
+	padding-top: 20px;
+}
+
+div.feedc_cm_set
+{
+	margin-left: 10px;
+	margin-top: 4px;
+	max-width: 600px;
+}

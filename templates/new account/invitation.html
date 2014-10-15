@@ -1,0 +1,57 @@
+
+				<script type="text/javascript" src="js/join/create.invitation.js"></script>
+			
+				<div class="mainpaneltitle"><div style="color: red; float: left; text-align: left; padding-left: 10px;" id="cnawarning"><data.join.initwarning></div><div class="mainpaneltitlein"><p>Create New Account</p></div></div>
+				<div class="mainpanel">
+					<div style="height: 10px;"></div>
+					<center>
+					
+					<form method="post" action="php/join/newinvite.php<data.join.sid>" onsubmit="cnai_precheck(1);">
+						
+					<table>
+
+						<tr><td>First Name:      </td><td><div class="mptextbox" id="bcnafname"><input id="cnafname" value="<data.join.userfname>" title="First name" size="40" type="text" name="qcnafname" maxlength="32" spellcheck="false"></div></td></tr>
+						<tr><td>Last Name:       </td><td><div class="mptextbox" id="bcnalname"><input id="cnalname" value="<data.join.userlname>" title="Last Name" size="40" type="text" name="qcnalname" maxlength="32" spellcheck="false"></div></td></tr>
+						<tr><td>E-mail Address:  </td><td><div class="mptextbox" id="bcnaemail"><input id="cnaemail" placeholder="yourname@example.com" value="<data.join.useremail>" title="Email address" size="40" type="text" name="qcnaemail" maxlength="32" spellcheck="false"></div></td></tr>
+						<tr><td>Invitation Code: </td><td><div class="mptextbox" id="bcnainvi" ><input id="cnainvi" value="<data.join.userinvi>" title="Invitation code" size="40" type="text" name="qcnainvi" maxlength="32" spellcheck="false"></div></td></tr>
+						<tr><td>Password:        </td><td><div class="mptextbox" id="bcnapass" ><input onchange="javascript: cnai_viewpass();" onkeydown="javascript: cnai_viewpass();" onpaste="javascript: cnai_viewpass();" id="cnapass" value="" title="Password" size="40" type="password" name="qcnapass" maxlength="32" spellcheck="false"></div></td></tr>
+						<tr><td><div id="cpass1" style="display: none;">Confirm Password:</div></td><td><div id="cpass2" style="display: none;"><div class="mptextbox" id="bcnacpass"><input id="cnacpass" value="" title="Confirm password" size="40" type="password" name="qcnacpass" maxlength="32" spellcheck="false"></div></div></td></tr>
+						<tr><td>Birthday:  </td><td>
+						
+						<div class="generabox">
+							<select name="bmonth">
+								<option value="1">January</option>
+								<option value="2">February</option>
+								<option value="3">March</option>
+								<option value="4">April</option>
+								<option value="5">May</option>
+								<option value="6">June</option>
+								<option value="7">July</option>
+								<option value="8">August</option>
+								<option value="9">September</option>
+								<option value="10">October</option>
+								<option value="11">November</option>
+								<option value="12">December</option>
+							</select>
+							
+							<select name="bday">
+								<data.join.days>
+							</select>
+							
+							<select name="byear">
+								<data.join.years>
+							</select>
+							
+							<div style="width: 0; height: 0; overflow: hidden;"><input type="submit" id="cnai_send" style="visibility: hidden; float: left;"/></div>
+						</div>
+						</td></tr>
+					</table>
+					
+					</form>
+					</center>
+					<div class="mtrightbox">
+						<div class="mtdefaultbtn" onclick="javascript: cnai_precheck(0);">Create Account</div>
+					</div>
+					
+					<div style="clear:both;"></div>
+				</div>

@@ -1,0 +1,87 @@
+<link href="css/settings/crop.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="js/settings/crop.js"></script>
+
+
+<div class="settingsp_title">General Settings</div>
+
+<div class="settingsp_groupt">Display Information</div>
+
+<div class="settingsp_group">
+
+	<a href="javascript: show_gendialog('php/settings/pages/changename.php', 0, 'Change Display Information', settingsgendapply_displaydetails);"><table>
+		<tr><td style="width: 160px;">Name:</td><td><data.user.name></td>
+		<tr class="od"><td>Gender:</td><td>Male</td>
+		<tr><td>Birthday:</td><td>September 3rd, 1989</td>
+		<tr class="od"><td>Description:</td><td>An Artist</td>
+		<tr><td>Email Address:</td><td>(change)</td>
+		<tr class="od"><td>Language:</td><td>English</td>
+	</table></a>
+</div>
+	
+<div class="settingsp_groupt">Display Picture
+	<div class="settingsp_groupt_dsc">Manage sliding image album which appears on your profile <a href="#">here.</a></div>
+</div>
+<div style="height: 20px;"></div>
+
+	<div class="settingsp_group">
+
+		<div class="cropifull">
+
+			<div class="cropmboxout"><div class="cropmbox">
+				<div class="cropmphoto"><img src="data/u<data.user.lid>/dp/temp.jpg" class="dragme" id="dpcropdrag" onload="cropinit();"/></div>
+			</div></div>
+		
+			<div class="croprtop">
+			
+				<div class="scropgroup">
+					<div class="croppreviewtext">Preview:</div>
+					<div class="cropdp1"><div class="cropidp1"><img id="ppthumb1" style="position: relative;" src="data/u<data.user.lid>/dp/temp.jpg"/></div></div>
+					<div class="cropdp2"><div class="cropidp1"><img id="ppthumb2" style="position: relative;" src="data/u<data.user.lid>/dp/temp.jpg"/></div></div>
+					<div class="cropdp3"><div class="cropidp1"><img id="ppthumb3" style="position: relative;" src="data/u<data.user.lid>/dp/temp.jpg"/></div></div>
+				</div>
+			
+				<div style="clear:both;"></div>
+				
+				
+				<form name="photo" enctype="multipart/form-data" action="php/settings/general/crop.php" method="post">
+					
+					<div class="scropgroup3">
+					
+						<span class="file-wrapper">
+							<input onchange="javascript: uploadpic();" onmouseout="javascript: uploadbtncolor(0);" onmouseover="javascript: uploadbtncolor(1);" type="file" name="image" id="photo" />
+							<span id="btnup" class="uploadppbutton">Upload</span>
+						</span>
+						
+						<input type="submit" name="upload" id="btnuploadpp" value="Upload" style="display: none;"/>
+						<input type="submit" name="upload" id="btnsavepp" value="Save" style="display: none;"/>
+						
+						<input type="hidden" name="ppmx1" value="0" id="ppmx1" />
+						<input type="hidden" name="ppmy1" value="0" id="ppmy1" />
+					
+						<div class="cropmbutton bgreen" onclick="javascript: savepic();">Save</div>
+					
+					</div>
+					
+				</form>
+				
+				
+			</div>
+
+		</div>
+	
+	</div>
+	
+	<div style="clear: both;"></div>
+	<div class="settingsp_groupt">Websites</div>
+
+	<div class="settingsp_group">
+		<settingsgpanelweblist>
+		
+		<div style='height: 20px;'></div>
+		<div style='margin-left: 380px;'>
+			<button class='general_settingbuttonblue' onclick="settings_gwb_save();" id='settings_g_wbsave' style='min-width: 50px; visibility: hidden;'>Save</button>
+			<button class='general_settingbuttonblue' onclick="javascript: settings_gwb_addwbrow('settings_g_wbtb');" style='min-width: 50px; padding: 5px;'s>Add</button>
+		</div>
+	</div>
+	
+	<div style="clear: both; height: 250px;"></div>

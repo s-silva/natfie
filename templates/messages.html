@@ -1,0 +1,40 @@
+<script type="text/javascript" src="js/main/msgui.js"></script>
+
+<div class="msg_main">
+	<div class="msg_content">
+		<div class="msg_ctitle">
+		
+			<div class="msg_tb_buttonset">
+				<div class="msg_tb_button" onclick='fsendmessage();' title="Send new message"><div style="background: url('images/sheet.png') no-repeat 0px -185px; width: 19px; height: 19px; position: relative; top: 11px; left: 11px"></div></div>
+				<div class="msg_tb_button" title="Important messages"><div style="background: url('images/sheet.png') no-repeat -1px -162px; width: 21px; height: 20px; position: relative; top: 11px; left: 10px"></div></div>
+			</div>
+		
+			<div class="msg_ctitle_tbox">
+				<div class="msg_ctitle_text">Conversations</div>
+				<div class="msg_ctitle_new">1</div>
+				<div style="clear:both;"></div>
+				<div class="msg_ctitle_dsc">Last message: 11.30AM Yesterday</div>
+			
+			</div>
+			
+			<div style="clear:both;"></div>
+		</div>
+		
+		<div class="msg_list_c" id="messageclist" data-mcount="<data.msgsetcount>">
+			<div class="msg_list"  id="messageclistin">
+				<div id="messageclistslidec">
+				<data.msgset>
+				
+				
+				</div>
+				
+				<div id="messageclistslidecsub">
+				</div>
+
+			</div>
+			
+			<center><div class="msgslider"><div class="msgsliderbtn" id="msliderbtn">Page 1 of <data.msgsetcount></div></div></center>
+		</div>
+	</div>
+
+</div>

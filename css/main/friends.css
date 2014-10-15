@@ -1,0 +1,174 @@
+div.fmp_topbar
+{
+	width: 100%;
+	background: #eef2f7;
+	height: 95px;
+}
+
+div.fmp_tb_search
+{
+	width: 680px;
+	padding-top: 34px;
+}
+
+div.fmp_tb_search input
+{
+	width: 98%;
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	font-size: 16px;
+	border: none;
+	outline: none;
+}
+
+div.fmp_tbs_inputb
+{
+	width: 558px;
+	height: 45px;
+	background: #ffffff;
+	border: 1px solid #d4e8f8;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	float: left;
+	margin-right: 4px;
+}
+
+div.fmp_button
+{
+	height: 45px;
+	width: auto;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	text-align: center;
+	padding: 0px 10px 0px 10px;
+	display: block;
+	float: left;
+	cursor: pointer;
+	margin-right: 4px;
+	font-size: 11px;
+	background: #58adeb;
+}
+
+div.fmp_button:hover
+{
+	background: #0384e1;
+}
+
+div.fmp_button p
+{
+	margin-top: 15px;
+	padding: 0 10px 0 10px;
+	color: #ffffff;
+}
+
+div.fmp_topbar_title
+{
+	margin-top: -14px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+div.fmp_grid
+{
+	margin: 10px 15px 10px 15px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	height: 530px;
+	font-size: 11px;
+}
+
+div.fmp_grid_line
+{
+	float: left;
+	width: 1500px;
+	margin-bottom: 4px;
+}
+
+div.fmp_person_card
+{
+	width: 342px;
+	height: 96px;
+	border: 1px solid #f6f6f6;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	float: left;
+	margin-right: 3px;
+	margin-bottom: 3px;
+	text-align: left;
+}
+
+div.fmp_person_card samp
+{
+	visibility: hidden;
+}
+
+div.fmp_person_card:hover samp
+{
+	visibility: visible;
+}
+
+
+div.fmp_person_card:hover
+{
+	background: #eaeff5;
+}
+
+div.fmp_person_pic
+{
+	width: 77px;
+	height: 77px;
+	float: left;
+	background: #e6e6e6;
+	margin: 8px;
+}
+
+div.fmp_person_name
+{
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 140%;
+	color: #4d4d4d;
+}
+
+div.fmp_person_card a
+{
+	text-decoration: none;
+	color: #4d4d4d;
+}
+
+div.fmp_person_dsc
+{
+	color: #858585;
+	font-size: 11px;
+	line-height: 140%;
+}
+
+div.fmp_person_pos
+{
+	color: #6d6d6d;
+	font-size: 11px;
+	line-height: 140%;
+}
+
+span.fmp_person_sub
+{
+	color: #b1b1b1;
+	font-size: 11px;
+	line-height: 140%;
+}
+
+div.fmp_person_pbs
+{
+	margin-top: 6px;
+}
+
+div.fmp_gridv
+{
+	left: 0px;
+	right: 0px;
+	bottom: 5px;
+	text-align: left;
+	position: relative;
+	top: 0px;
+}

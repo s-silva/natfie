@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+
+<html><head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Natfie - Welcome to the Otherside</title>
+
+	<link href="css/main/login2.css" rel="stylesheet" type="text/css"/>
+	<script type="text/javascript" src="js/main/login2.js"></script>
+	
+	
+</head><body onload="login_init()">
+
+	<script type="text/javascript">
+		 var RecaptchaOptions = {
+			theme : 'custom',
+			custom_theme_widget: 'recaptcha_widget'
+		 };
+	</script>
+	
+	<div class="loginmid"></div>
+	
+	
+	<div style="position: absolute; top: 50%; width: 100%; margin: -30px 0;">
+	<div style="float: left; position: relative; left: 50%; padding-top: 10px;">
+		<div class="loginmidbox_lock">
+			
+			<form name="loginformname" method="post" id="loginformname" class="loginformid" enctype="application/x-www-form-urlencoded" action="testlog.php"  autocomplete="off"> 
+			<div id="login_box">
+			
+				<div><label><input type="checkbox" name="rememberme" value="1" style="margin-top: 5px; vertical-align: top;"/>Remember Me</label></div>
+				
+				<div>
+					<div class="login_lock_fborder">
+						<input class='login_lock_fborderi' style='font-size: 16px;' value="" title="Email" type="text" placeholder="Email" id="username" name="username" maxlength="2048" style="border: none; outline-style: none;" spellcheck="false" autocomplete="on"/>
+					</div>
+					<div class="login_lock_fborder" style="float: left;">
+						<input class='login_lock_fborderi' style='font-size: 16px;' value="" title="Password" placeholder="Password" type="password" id="password" name="password" maxlength="2048" spellcheck="false"/>
+					</div>
+					<!--<a href='login.recover'><div class="login_fpassowrd" title='Password forgotten?'><samp>Recover password</samp></div>-->
+				
+				
+				
+				
+				
+					<div class="captchabox">
+				
+							<div id="recaptcha_widget" style="display:none">
+
+								<div class="login_lock_fborder captcha" style="float: left;">
+									<div id="recaptcha_image"></div>
+									
+									<div class="mtcaptchaholder">
+										<a href="javascript:Recaptcha.reload()"><div class="mtcaptchabtn" style="background: url('images/captcha/refresh.png') no-repeat; margin-left: 4px;"></div></a>
+										<div class="recaptcha_only_if_image"><a href="javascript:Recaptcha.switch_type('audio')"><div class="mtcaptchabtn" style="background: url('images/captcha/sound.png') no-repeat"></div></a></div>
+										<div class="recaptcha_only_if_audio"><a href="javascript:Recaptcha.switch_type('image')"><div class="mtcaptchabtn" style="background: url('images/captcha/sound.png') no-repeat"></div></a></div>
+										<a href="javascript:Recaptcha.showhelp()"><div class="mtcaptchabtn" style="background: url('images/captcha/help.png') no-repeat"></div></a>
+										<div style="clear:both;"></div>
+									</div>
+								</div>
+								
+								<div class="recaptcha_only_if_incorrect_sol" style="color:red">Incorrect please try again</div>
+
+								<!--<div class="captchaboxintextbox" <data.join.captchastyle>>
+									<input type="text" id="recaptcha_response_field" name="recaptcha_response_field" placeholder="Enter the words above." />
+								</div>-->
+								
+								<div class="login_lock_fborder" style="float: left;">
+									<input class='login_lock_fborderi' style='font-size: 16px;' value="" title="Captcha" placeholder="Type the text in the box above..." type="text" id="recaptcha_response_field" name="recaptcha_response_field"  maxlength="2048" spellcheck="false"/>
+								</div>
+								
+								
+								
+								<div style="clear:both;"></div>
+
+							</div>
+
+							<script type="text/javascript" src="http://www.google.com/recaptcha/api/challenge?k=6LcIAMwSAAAAAP6GfcLNdOlqFj2Y9xbCSn7svWh5"></script>
+							
+							<noscript>
+								<iframe src="http://www.google.com/recaptcha/api/noscript?k=6LcIAMwSAAAAAP6GfcLNdOlqFj2Y9xbCSn7svWh5" height="300" width="500" frameborder="0"></iframe><br>
+								<textarea name="recaptcha_challenge_field" rows="3" cols="40"></textarea>
+								<input type="hidden" name="recaptcha_response_field" value="manual_challenge">
+							</noscript>
+						<div style="width: 0; height: 0; overflow: hidden;"><input type="submit" id="cnai_send" style="visibility: hidden; float: left;"/></div>
+					</div>
+					
+					
+					
+					
+						
+					
+					
+					
+				</div>
+				
+				
+				<input type="submit" id="submit" name="login" value="Log in" style='font-size: 16px;' class="login_button lock"/>
+				<!--<a href='new'><div class="login_littlenewbutton" title='Create new account here'><p>+</p><samp>Create new account here</samp></div></a>-->
+				<input name="action" id="action" value="login" type="hidden"> 
+				
+				<div style="clear:both;"></div>
+				
+				
+				<a class='login_lock_links' href='login.recovery'>Forgot password?</a><br/><a class='login_lock_links' href='new'>Sign up!</a>
+				
+			</div>
+			</form>
+			
+		</div>
+	</div>
+	</div>
+	
+	<a href="new" style="text-decoration: none;"><div class="loginnewbox"><div class="loginnewbtn"><div class="loginnewbtnimg"></div></div><div style="margin-left: 5px;">New?</div></div></a>
+
+	<div id="login_footer">
+		<div id="login_footer_right">
+			<a href="help.about">About</a>  | <a href="help.main">Help</a>  |  <a href="help.privacypolicy">Privacy Policy</a>   | <a href="help.contact">Contact</a>
+		</div>
+		<div id="login_footer_left">
+			<div class="languagebtnup"></div>  <a href="#" class="luline">English</a>  | <a href="#">中文</a>  |  <a href="#">Français</a>   | <a href="#">Pусский</a> | <a href="#">Español</a> | <a href="#">हिन्दी</a>
+		</div>
+	</div>
+</body></html> 

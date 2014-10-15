@@ -1,0 +1,45 @@
+div.guestloginbtn
+{
+	padding: 0px 25px 0px 25px;
+	color: #ffffff;
+	text-align: center;
+	/*background: #a2cd56;*/
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	height: 23px;
+	width: auto;
+	cursor: pointer;
+	float: right;
+}
+
+div.guestloginbtn:hover
+{
+	/*background: #c2ed76;*/
+}
+
+div.guestlogin
+{
+	background: none;
+	padding: 0;
+	margin: 0;
+	float: right;
+	margin: 3px;
+}
+
+div .login_fborder
+{
+	border: 1px solid #e6e6e6;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background: #ffffff;
+}
+
+div .login_fborder input
+{
+	border: none;
+	outline-style: none;
+	width: 130px;
+	font: 11px "lucida grande",tahoma,verdana,arial,sans-serif;
+	padding: 2px;
+	height: 17px;
+}

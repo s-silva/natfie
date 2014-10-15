@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html><head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Welcome to Card Tree</title>
+
+	<link href="css/main/login.css" rel="stylesheet" type="text/css"/>
+	<script type="text/javascript" src="js/main/login.js"></script>
+	
+</head><body onload="login_init()">
+
+	<div id="login_top">
+		<div id="login_logo"></div>
+		<div id="login_bigtext">
+			<h1>The Card Tree</h1>
+			<h2>Welcome to your personal space...</h2>
+		</div>
+	</div>
+	
+		 <form name="loginformname" method="post" id="loginformname" class="loginformid" enctype="application/x-www-form-urlencoded" action="testlog.php"  autocomplete="off"> 
+		<div id="login_box">
+		
+			<div>
+				<div style="float: left;">
+					Email:</br>
+					<div class="login_fborder">
+						<input value="" title="Email" size="25" type="text" id="username" name="username" maxlength="2048" style="border: none; outline-style: none;" spellcheck="false" autocomplete="on">
+					</div>
+				</div>
+				
+				<div style="float: left; margin: 0 10px;">
+					Password:</br>
+					<div class="login_fborder">
+						<input value="" title="Password" size="25" type="password" id="password" name="password" maxlength="2048" style="border: none; outline-style: none;" spellcheck="false">
+					</div>
+				</div>
+			</div>
+			
+			<div>
+				<!--<div class="login_checkbox"></div>
+				<input  class="checkrem" type="checkbox" name="remember" value="0"/><div style="padding-left: 20px;">Remember Me</div> -->
+				<label><input type="checkbox" name="rememberme" value="1" style="margin-top: 5px; vertical-align: top;"/>Remember Me</label>
+
+			</div>
+			
+			<input name="action" id="action" value="login" type="hidden"> 
+			<input type="submit" id="submit" name="login" value="Log In" class="login_button"/>
+			
+			
+			<div id="login_new">New to the site? <a href="new">Sign up here</a></div>
+		</div>
+		</form>
+		
+	
+	<div style="position: absolute; top: 50%; width: 100%; margin: -30px 0;">
+	<div style="float: left; position: relative; left: 50%; padding-top: 10px;">
+		<div id="login_searchbox">
+		
+			Global Thread Search:
+			<div id="login_sborder">
+				<input value="" title="Search" size="60" type="text" autocomplete="off" name="q" maxlength="2048" style="border: none; outline-style: none;" spellcheck="false">
+			</div>
+		</div>
+	</div>
+	</div>
+	
+	
+	<div id="login_footer">
+		<div id="login_footer_right">
+			<a href="help.about">About</a>  | <a href="help.main">Help</a>  |  <a href="help.privacypolicy">Privacy Policy</a>   | <a href="help.contact">Contact</a>
+		</div>
+	</div>
+	
+</body></html> 

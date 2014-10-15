@@ -1,0 +1,114 @@
+div.shout_mbox
+{
+	text-align: left;
+	font-size: 11px;
+	width: 450px;
+	margin-top: 220px;
+	line-height: 140%;
+}
+
+div.shout_mboxl
+{
+	color: #808080;
+	margin-left: 65px;
+	margin-top: -64px;
+	border-left: 6px solid #5f8db5;
+	padding-left: 5px;
+}
+
+div.shout_mbutton
+{
+	position: fixed;
+	bottom: 8px;
+	left: 10px;
+	background: url('../../images/misc/shout.png');
+	width: 69px;
+	height: 19px;
+	cursor: pointer;
+}
+
+div.shout_typebox
+{
+	width: 440px;
+	min-height: 120px;
+	border: 1px solid #e8ecf5;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+div.shout_typebox textarea
+{
+	min-height: 120px;
+}
+
+div.shout_typeboxout
+{
+	text-align: left;
+	font-size: 11px;
+	width: 450px;
+	margin-top: 220px;
+	line-height: 140%;
+}
+
+div.shout_typeboxout a
+{
+	text-decoration: none;
+}
+
+.shout_sendbutton
+{
+	height: 35px;
+	width: 135px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	color: #ffffff;
+	background: #58adeb;
+	margin-top: 5px;
+	cursor: pointer;
+	border: none;
+	font-size: 11px;
+	font: inherit;
+}
+
+.shout_sendbutton p
+{
+	padding-top: 9px;
+	color: #ffffff;
+}
+
+a.shout_anon
+{
+	color: #aeaeae;
+	text-decoration: none;
+}
+
+a.shout_anon:hover
+{
+	color: #555555;
+}
+
+div.shout_anonbox
+{
+	width: 13px;
+	height: 13px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background: #e8ecf5;
+	float: left;
+	margin-right: 4px;
+}
+
+div.shout_anonout
+{
+	margin-bottom: 5px;
+}
+
+div.shoutanoncheckboxtick
+{
+	width: 7px;
+	height: 7px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	background: #3490e1;
+	margin: 3px 0 0 3px;
+}

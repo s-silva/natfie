@@ -1,0 +1,204 @@
+
+body{
+	font: 11px "lucida grande",tahoma,verdana,arial,sans-serif; /*10pt "Calibri", helvetica, sans-serif; */
+	background: #fafafa;
+	color: black; /* #102d96; */
+	padding: 0 0 0 0;
+	margin: 0 0;
+	line-height: 16.3pt;
+	text-align: justify;
+	overflow: hidden;
+}
+
+h1{
+	font: 36pt "Calibri", helvetica, sans-serif; 
+	font-weight: bold;
+	line-height: 0;
+	padding: 0 0 0 0;
+	color: #ffffff;
+	text-shadow: #546c29 2px 1px 2px;
+}
+
+h2{
+	font: 11pt "Calibri", helvetica, sans-serif; 
+	font-weight: bold;
+	line-height: 0;
+	padding: 0 0 0 0;
+	color: #6c6c3b;
+	text-shadow: #eeeecb 1px 1px 1px;
+}
+
+h3{
+	font-size: 10pt;
+	padding: 0;
+	margin: 0;
+	color: #000066;
+}
+
+ul
+{
+	padding-top: 9px;
+}
+
+a{
+	color: #102d96;
+}
+
+a:hover{
+	color: #FF9900;
+}
+
+a:visited{
+	color: #102d96;
+}
+
+#login_top{
+	background: #82ad36 url('../../images/login/topbar.png') repeat-x;
+	color: #ffffff;
+	height: 109px;
+	width: 100%;
+	top: 0px;
+	position: absolute;
+}
+
+#login_logo{
+	background: url('../../images/logos/login-red.png') no-repeat;
+	height: 148px;
+	width: 133px;
+	display: block;
+	float: left;
+	margin: 48px 5px;
+}
+
+#login_bigtext{
+	margin: 85px 0px;
+}
+
+
+#login_searchbox{
+	background: none;
+	color: #4a4a4a;
+	float: left;
+	position: relative;
+	left: -50%;
+}
+
+#login_sborder{
+	border: 1px solid #e6e6e6;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+#login_footer{
+	border-top: 1px solid #e6e6e6;
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	height: 27px;
+}
+
+#login_footer_right{
+	display: block;
+	float: right;
+	padding-right: 10px;
+	padding-top: 3px;
+}
+
+#login_footer_right a{
+	text-decoration: none;
+	color: #757575;
+}
+
+#login_footer_right a:hover{
+	text-decoration: none;
+	color: #aa0000;
+}
+
+#login_box
+{
+	right: 0;
+	color: #ffffff;
+	position: fixed;
+	padding: 3px 10px;
+}
+
+#login_box input
+{
+	font-size: 11px;
+	padding: 2px;
+}
+
+div .login_fborder
+{
+	border: 1px solid #e6e6e6;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background: #ffffff;
+}
+
+div .login_fborder input
+{
+	width: 130px;
+}
+
+input.checkrem
+{
+	display: none;
+}
+
+div .login_checkbox
+{
+	margin: 4px 0;
+	background: #ffffff;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	width: 14px;
+	height: 14px;
+	position: relative;
+	display: block;
+	float: left;
+}
+
+.login_button{
+
+	float: right;
+	background: #c2d79c;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	width: 104px;
+	height: 25px;
+	text-align: center;
+	padding: 2px 0 0 0;
+	margin: -15px 10px;
+	border: none;
+	cursor: pointer;
+	color: #336699;
+}
+
+.login_button:hover{
+	background: #e2f7bc;
+}
+
+#login_button a
+{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+#login_new
+{
+	float: right;
+	display: block;
+	margin: 18px 10px;
+}
+
+#login_new a
+{
+	text-decoration: none;
+	color: #336666;
+}
+
+#login_new a:hover
+{
+	color: #ffeeee;
+}

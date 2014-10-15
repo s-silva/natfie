@@ -1,0 +1,391 @@
+
+body{
+	font: 11px sans-serif;
+	background: #669933;
+	color: #d4e3c6;
+	padding: 0 0 0 0;
+	margin: 0 0;
+	line-height: 16.3pt;
+	text-align: justify;
+	overflow: hidden;
+	text-align: middle;
+}
+
+div.loginmid
+{
+	width: 700px;
+	height: 100%;
+	left: 50%;
+	margin-left: -350px;
+	position: fixed;
+}
+
+div.loginmidlogo
+{
+	width: 113px;
+	height: 212px;
+	background: url('../../images/sheet.png') no-repeat -288px 0px;
+	margin-left: 35px;
+}
+
+div.loginmidbox
+{
+	width: 200px;
+	height: 345px;
+	left: -100px;
+	top: -155px;
+	position: relative;
+}
+
+div.loginmidbox_lock
+{
+	width: 306px;
+	height: 315px;
+	left: -195px;
+	top: -155px;
+	position: relative;
+}
+
+div.loginnewbox
+{
+	color: #b0d090;
+	position: absolute;
+	right: 8px;
+	top: 8px;
+}
+
+div.loginnewbtn
+{
+	width: 20px;
+	height: 20px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background: #a0c080;
+	padding: 8px;
+	cursor: pointer;
+}
+
+div.loginnewbtn:hover
+{
+	background: #c0e0a0;
+}
+
+div.loginnewbtnimg
+{
+	background: url('../../images/sheet.png') no-repeat -14px -52px;
+	width: 19px;
+	height: 19px;
+	
+}
+
+a.login_lock_links
+{
+	color: #d4e3c6;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+
+a.login_lock_links:hover
+{
+	color: #ffffff;
+}
+
+
+
+#login_box
+{
+	margin-left: 35px;
+}
+
+#login_box a
+{
+	text-decoration: none;
+}
+
+#login_box input
+{
+	font-size: 11px;
+	padding: 2px;
+}
+
+div.login_lock_fborder
+{
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background: #ffffff;
+	margin-bottom: 6px;
+	width: 306px;
+	height: 40px;
+	-webkit-box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+	box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+	color: #808080;
+	font-size: 16px;
+}
+
+div.login_lock_fborder.captcha
+{
+	padding: 3px;
+	overflow: hidden;
+	height: 77px;
+	width: 300px;
+}
+
+input.login_lock_fborderi
+{
+	border: none;
+	outline-style: none;
+	margin: 3px 3px;
+	height: 30px;
+	width: 272px;
+	line-height: 160%;
+}
+
+div .login_fborder
+{
+
+	background: #d3e3c2;
+	margin-bottom: 3px;
+	width: 132px;
+	color: #808080;
+	overflow: hidden;
+
+}
+
+.demobutton
+{
+	font-size: 14px;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.demobutton:hover
+{
+	color: #ff0000;
+}
+
+div .login_fborder input
+{
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	background: #d3e3c2;
+}
+
+input.checkrem
+{
+	display: none;
+}
+
+div .login_checkbox
+{
+	margin: 4px 0;
+	background: #ffffff;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	width: 14px;
+	height: 14px;
+	position: relative;
+	display: block;
+}
+
+.login_button{
+	background: #8fb965;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	width: 132px;
+	height: 25px;
+	text-align: center;
+	padding: 2px 0 0 0;
+	border: none;
+	cursor: pointer;
+	color: #ffffff;
+	float: left;
+	text-decoration: none;
+}
+
+.login_button:hover{
+	background: #afd985;
+}
+
+#login_button a
+{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.login_button.lock
+{
+	width: 306px;
+	height: 40px;
+}
+
+
+
+#login_footer{
+
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	height: 27px;
+}
+
+#login_footer_left{
+	display: block;
+	float: left;
+	padding-left: 10px;
+	padding-top: 3px;
+}
+
+#login_footer_right{
+	display: block;
+	float: right;
+	padding-right: 10px;
+	padding-top: 3px;
+}
+
+#login_footer a{
+	text-decoration: none;
+	color: #d4e3c6;
+}
+
+#login_footer a:hover{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+a.luline
+{
+	border-bottom: 2px solid #acc898
+}
+
+div.login_fpassowrd
+{
+	width: 18px;
+	height: 18px;
+	background: url('../../images/sheet.png') no-repeat -168px -109px;
+	float: left;
+	margin-top: 2px;
+	margin-left: 4px;
+	cursor: pointer;
+	position: relative;
+}
+
+
+div.login_fpassowrd samp
+{
+	display: none;
+}
+
+div.login_fpassowrd:hover samp
+{
+	display: inline;
+}
+
+div.login_fpassowrd p
+{
+	font-size: 14px;
+	color: #ffffff;
+	font-weight: bold;
+	margin: -1px 0 0 3px;
+	padding: 0;
+	line-height: 140%;
+}
+
+div.login_fpassowrd samp
+{
+	position: absolute;
+	color: #ffffff;
+	left: 26px;
+	top: 2px;
+	font: 11px "lucida grande",tahoma,verdana,arial,sans-serif;
+	width: 300px;
+}
+
+div.login_littlenewbutton
+{
+	width: 18px;
+	height: 18px;
+	background: #9ec27a;
+	float: left;
+	margin-top: 3px;
+	margin-left: 4px;
+	cursor: pointer;
+	-moz-border-radius: 9px;
+	border-radius: 9px;
+	position: relative;
+}
+
+div.login_littlenewbutton samp
+{
+	display: none;
+}
+
+div.login_littlenewbutton:hover samp
+{
+	display: inline;
+}
+
+div.login_littlenewbutton p
+{
+	font-size: 14px;
+	color: #ffffff;
+	font-weight: bold;
+	margin: -1px 0 0 3px;
+	padding: 0;
+	line-height: 140%;
+}
+
+div.login_littlenewbutton samp
+{
+	position: absolute;
+	color: #ffffff;
+	left: 26px;
+	top: 2px;
+	font: 11px "lucida grande",tahoma,verdana,arial,sans-serif;
+	width: 300px;
+}
+
+
+div.languagebtnup
+{
+	width: 9px;
+	height: 6px;
+	background: url('../../images/sheet.png') no-repeat -105px -52px;
+	float: left;
+	margin-top: 8px;
+	margin-right: 4px;
+	cursor: pointer;
+}
+
+
+/* captcha */
+
+div.mtcaptchaholder
+{
+	margin-top: 4px;
+}
+
+div.mtcaptchabtn
+{
+	display: block;
+	height: 20px;
+	width: 20px;
+	cursor: pointer;
+	float: left;
+}
+
+div.mtcaptchabtn:hover
+{
+	background: #a2cd56;
+}
+
+
+
+
+
+
+
+
+
+

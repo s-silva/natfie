@@ -1,0 +1,342 @@
+div.msg_main
+{
+	background: #e5ecf2;
+	font-size: 11px;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+}
+
+div.msg_taskbar
+{
+	border-right: 4px solid #e5ecf2;
+	float: left;
+}
+
+div.msg_content
+{
+	width: 100%;
+	margin-left: 95px;
+	height: 600px;
+}
+
+div.msg_ctitle
+{
+	border-bottom: 4px solid #e5ecf2;
+	height: 40px;
+	width: 100%;
+}
+
+div.msg_tb_buttonset
+{
+	margin: 8px 0 0 8px;
+	padding: 5px 5px 2px 5px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background: #ffffff;
+}
+
+div.msg_tb_button
+{
+	width: 75px;
+	height: 75px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	display: block;
+	cursor: pointer;
+	background: #efefef;
+	margin: 0 0 5px 0;
+	color: #ffffff;
+}
+
+div.msg_tb_button:hover
+{
+	background: #cfcfcf;
+}
+
+div.msg_tb_category
+{
+	line-height: 130%;
+	font-weight: bold;
+	color: #858585;
+	border-bottom: 3px solid #e5ecf2;
+	margin: 10px 5px 3px 0;
+}
+
+div.msg_ctitle_tbox
+{
+	padding: 8px 0 0 15px;
+	height: 21px;
+}
+
+div.msg_ctitle_text
+{
+	font-size: 14px;
+	font-weight: bold;
+	float: left;
+}
+
+div.msg_ctitle_new
+{
+	height: 18px;
+	color: #ffffff;
+	font-size: 12px;
+	font-weight: bold;
+	background: #ff6600;
+	padding: 0 7px 2px 7px;
+	float: left;
+	display: block;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	margin-left: 10px;
+}
+
+div.msg_ctitle_dsc
+{
+	color: #a9a9a9;
+	margin-left: 15px;
+}
+
+div.msg_list_c
+{
+	
+	height: 570px;
+	margin: 10px 10px;
+	padding: 7px;
+	background: #ffffff;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+div.msg_list
+{
+
+	width: 100%;
+	height: 540px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+div.msg_line_b
+{
+	height: 147px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	margin-bottom: 2px;
+	padding: 3px;
+	border: 1px solid #d7d9dc;
+	overflow: hidden;
+}
+
+div.msg_line_b span
+{
+	display: inline;
+}
+
+div.msg_line_b font
+{
+	display: none;
+}
+
+div.msg_line_b p
+{
+	margin: 0;
+	padding: 0;
+	line-height: 130%;
+}
+
+div.msg_line
+{
+	clear: both;
+	height: 32px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	margin-bottom: 2px;
+	padding: 3px;
+	border: 1px solid #d7d9dc;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+div.msg_line span
+{
+	display: none;
+}
+
+div.msg_line font
+{
+	display: inline;
+}
+
+div.msg_line_odd
+{
+	background: #f3f6f9;
+}
+
+div.msg_line_even
+{
+	background: #ffffff;
+}
+
+div.msg_line_odd:hover
+{
+	background: #ddeeff;
+}
+
+div.msg_line_even:hover
+{
+	background: #ddeeff;
+}
+
+div.msg_line_pic
+{
+	height: 68px;
+	width: 68px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background: #336699;
+	float: left;
+}
+
+div.msg_line_text
+{
+	max-width: 60%;
+	margin-left: 5px;
+	float: left;
+	line-height: 150%;
+}
+
+div.msg_line_user
+{
+	color: #4473a2;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+div.msg_line_subject
+{
+	color: #336699;
+}
+
+div.msg_line_contents 
+{
+	clear: both;
+	color: #787878;
+}
+
+div.msg_line_time
+{
+	clear: both;
+	color: #91a9c0;
+}
+
+div.msg_line_right
+{
+	float: right;
+}
+
+
+div.msg_line_rt
+{
+	height: 15px;
+}
+
+div.msg_line_rtbtn
+{
+	width: 13px;
+	height: 13px;
+	background: white;
+	float: right;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border: 1px solid #d7d9dc;
+	margin-left: 2px;
+	cursor: pointer;
+}
+
+div.msg_line_rtbtn:hover
+{
+	background: #bbbbbb;
+}
+
+div.msg_line_rtactive
+{
+	width: 5px;
+	height: 5px;
+	background: #959595;
+	float: right;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	margin: 4px;
+	cursor: pointer;
+}
+
+div.msg_line_upic
+{
+	float: left;
+	margin-right: 3px;
+}
+
+div.msg_line_cbtn
+{
+	float: left;
+	width: 41px;
+	height: 41px;
+	background: #e6efd7;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	margin-right: 3px;
+	cursor: pointer;
+}
+
+div.msg_line_cbtn:hover
+{
+	background: #82ad36;
+}
+
+div.msg_line_csep
+{
+	float: left;
+	margin-right: 3px;
+	width: 4px;
+	height: 41px;
+	background: #e6e6e6;
+}
+
+div.msg_line_controls
+{
+	margin-top: 5px;
+}
+
+div.msgslider
+{
+	width: 240px;
+	height: 18px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background: #ebf0f5;
+	padding: 2px;
+}
+
+div.msgsliderbtn
+{
+	width: 162px;
+	height: 18px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background: #acbcd3;
+	color: #ffffff;
+	line-height: 170%;
+	cursor: pointer;
+	position: relative;
+}
+
+#messageclistslidec
+{
+	position: relative;
+}
+
+#messageclistslidecsub
+{
+	position: relative;
+}

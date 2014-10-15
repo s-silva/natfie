@@ -1,0 +1,48 @@
+<div style="position:absolute; top:30px; bottom:0px; left:0px; right:0px; overflow: auto;">
+	
+	<link href="css/main/profile.css" rel="stylesheet" type="text/css"/>
+	
+	<div id="topsectionouter"><div id="topsectionout"><div id="topsection_posts">
+		
+		
+		<div style="clear:both;"></div>
+		
+		<div id="profiledetailsmain" style='position: relative;'>
+		
+			<div class='profilelongpic_save' id='profilelongpic_save' style='visibility: hidden;'>Save</div>
+			
+			<div class="profilepicset" id="ppicset" style="display: {profile_displayps};">
+				<div id="slidewrapper" style="background: none;height: 261px; margin-bottom: 7px; overflow: hidden;" class="dragdealer"> 
+					{profile_photostripset}
+				</div>
+			</div>
+			
+			<div style="clear:both;"></div>
+			<div style="height: 4px"></div>
+			
+			<div class="dpcover">
+				<img src="data/u<data.user.lid>/dp/1.jpg" onerror='failsafe_img(this, 1);'/>
+			</div>
+			
+			<div class="dptext">
+			<div class="profilename"><data.user.name></div>
+			<div class="profiledetail1">{profile_description}</div>
+			<div class="profiledetail2">Birthday: May 1st, 1995</div>
+			</div>
+			
+			<div class="profilebuttonsgroup">
+				<a href="#"><div class="profilebuttonbox" id="pbmsg"><div style="margin: 14px 10px; background: url('images/sheet.png') no-repeat -82px -109px; width: 43px; height: 36px;" ></div></div></a>
+				<a href="bu<data.user.id>" title="Read the blog"><div class="profilebuttonbox" id="pbblog"><div style="margin: 10px 11px; background: url('images/sheet.png') no-repeat -126px -109px; width: 39px; height: 39px;" ></div></div></a>
+				<a href="u<data.user.id>" title="View information"><div class="profilebuttonbox" id="pbposts"><div style="margin: 14px 8px; background: url('images/sheet.png') no-repeat -36px -108px; width: 44px; height: 34px;"></div></div></a>			</div>
+		</div>
+	</div></div></div>
+
+	<script type="text/javascript" src="js/main/posts.js"></script>
+	
+	<div class="homeinnercontent" id="innercontent">
+		<div class="homecontent" id="content">
+
+		</div>
+	</div>
+	
+</div>

@@ -1,0 +1,258 @@
+<div style="position:absolute; top:30px; bottom:0px; left:0px; right:0px; overflow: auto;">
+	
+	<link href="css/main/profile.css" rel="stylesheet" type="text/css"/>
+	<link href="css/main/profile_edit.css" rel="stylesheet" type="text/css"/>
+	<!--<link href="css/main/dragdealer.css" rel="stylesheet" type="text/css"/>-->
+	<script type="text/javascript" src="js/main/profile.js"></script>
+	<script type="text/javascript" src="js/main/profile_edit.js"></script>
+	<!--<script type="text/javascript" src="js/main/dragdealer.js"></script>-->
+	
+	<div class='bkmenu_button_back' style='display: {profile_displaybkbar};' onclick='show_bkphotomenu(1, this, 2, 0)'>
+		<div class='bkmenu_button back' title='Edit background photos'><div style="margin: 10px 6px; background: url('images/sheet.png') no-repeat -37px -180px; width: 12px; height: 7px;"></div></div>
+	</div>
+	
+	<div id="topsectionouter"><div id="topsectionout"><div id="topsection" class="tsc_{profile_displayps}">
+		
+		
+		<div style="clear:both;"></div>
+		
+		<div id="profiledetailsmain" style='position: relative;'>
+		
+			<div class='profilelongpic_save' id='profilelongpic_save' style='visibility: hidden;'>Save</div>
+			
+			<div class="profilepicset" id="ppicset" style="display: {profile_displayps};">
+			
+				<div class='bkmenu_button_back' style='display: {profile_displaybkbar};' onclick='show_bkphotomenu(1, this, 2, 0)'>
+					<div class='bkmenu_button' title='Edit background photos'><div style="margin: 10px 6px; background: url('images/sheet.png') no-repeat -37px -180px; width: 12px; height: 7px;"></div></div>
+				</div>
+				
+				<div class='bkmenu_button' style='display: {profile_displaybkbtn};' onclick='show_bkphotomenu(1, this, 2, 0)' title='Edit background photos'><div style="margin: 10px 6px; background: url('images/sheet.png') no-repeat -37px -180px; width: 12px; height: 7px;"></div></div>
+
+				
+				<div id="slidewrapper" style="background: none; height: 261px; margin-bottom: 7px; overflow: hidden;" class="dragdealer"> 
+					{profile_photostripset}
+				</div>
+			</div>
+			
+			<div style="clear:both;"></div>
+			<div style="height: 1px"></div>
+		
+		
+			<div class="dpcover">
+				<img src="data/u<data.user.lid>/dp/1.jpg" onerror='failsafe_img(this, 1);'/>
+			</div>
+			
+			<div class="dptext">
+			<div class="profilename"><data.user.name></div>
+			<div style="clear:both;"></div>
+			<div class="profiledetail1">{profile_description}</div>
+			<div class="profiledetail2">Birthday: {profile_birth_month} {profile_birth_dayfix}, {profile_birth_year}</div>
+			</div>
+			
+			<div class="profilebuttonsgroup">
+				<a href="bu<data.user.id>" title="Read the blog"><div class="profilebuttonbox" id="pbblog"><div style="margin: 10px 11px; background: url('images/sheet.png') no-repeat -126px -109px; width: 39px; height: 39px;" ></div></div></a>
+				<a href="pu<data.user.id>" title="View the user's post set"><div class="profilebuttonbox" id="pbposts"><div style="margin: 14px 8px; background: url('images/sheet.png') no-repeat -36px -108px; width: 44px; height: 34px;"></div></div></a>
+			</div>
+		</div>
+	</div></div></div>
+
+		
+	<div class="profileinfocontentouter"><div class="profileinfocontent"><div class="profileinfocontentinner">
+		<div class="profileinfoleft">
+		
+			<div class="divhidden" id="detailcount">{profile_details_count}</div>
+		
+			<div class="infoleftgroup">Work
+
+				<div id="leftgroup_work">
+					{profile_details_work}
+				</div>
+				
+				<div class="profileleft_edit" id="peditwork" style="display: none;">
+					
+						<div class="infoleftmain"><div class="profileworkedit"><input style="width: 100%;" type="text" id="profileworkedit_place69"/></div></div>
+						<div class="infoleftdetail1"><div class="profileworkedit"><input style="width: 100%;" type="text" id="profileworkedit_location69"/></div></div>
+						<div class="infoleftdetail2"><div class="profileworkedit"><input style="width: 100%;" type="text" id="profileworkedit_description69"/></div></div>
+						<div class="infoleftdetail3"><div class="profileworkedit_time">From: <input style="width: 60px;" type="text" id="profileworkedit_fromtime69"/> To: <input style="width: 60px;" type="text" id="profileworkedit_totime69"/> <div style="margin-top: 2px; float: right;"> <input type="checkbox" id="profileworkedit_present69"/></div> Present Job:</div></div>
+						<div style="clear:both;"></div>
+						<div class="profileinplace_delete"><a id="profileworkedit_delete69" href="javascript: pwboxedit_detaildeletesel();"/>X</a></div><div class="profileworkedit_buttons"><a style="background: #ffffff; color: #555555; border: 1px solid #dddddd;" id="profileworkedit_cancel69" href="javascript: pwboxedit_detail(-2, 0);"/>Cancel</a><a id="profileworkedit_save69" href="javascript: pwboxedit_detail(-1, 0);"/>Save</a></div>
+						<div style="clear:both;"></div>
+				</div>
+				
+				<div class="infoleftbox_add_out"><a href="javascript: profile_addwork(0);"><div class="infoleftbox_add">
+					<p>+</p>
+				</div></a></div>
+			
+			
+			</div>
+			
+			<div class="infoleftgroup">Education
+			
+				<div id="leftgroup_edu">
+					{profile_details_edu}
+				</div>
+				
+				<div class="profileleft_edit" id="peditedu" style="display: none;">
+					
+						<div class="infoleftmain"><div class="profileworkedit"><input style="width: 100%;" type="text" id="profileeduedit_place69"/></div></div>
+						<div class="infoleftdetail1"><div class="profileworkedit"><input style="width: 100%;" type="text" id="profileeduedit_location69"/></div></div>
+						<div class="infoleftdetail2"><div class="profileworkedit"><input style="width: 100%;" type="text" id="profileeduedit_description69"/></div></div>
+						<div class="infoleftdetail3"><div class="profileworkedit_time">From: <input style="width: 60px;" type="text" id="profileeduedit_fromtime69"/> To: <input style="width: 60px;" type="text" id="profileeduedit_totime69"/> <div style="margin-top: 2px; float: right;"> <input type="checkbox" id="profileeduedit_present69"/></div> Present School:</div></div>
+						<div style="clear:both;"></div>
+						<div class="profileinplace_delete"><a id="profileeduedit_delete69" href="javascript: pwboxedit_detaildeletesel();"/>X</a></div><div class="profileworkedit_buttons"><a style="background: #ffffff; color: #555555; border: 1px solid #dddddd;" id="profileworkedit_cancel69" href="javascript: pwboxedit_detail(-2, 1);"/>Cancel</a><a id="profileworkedit_save69" href="javascript: pwboxedit_detail(-1, 1);"/>Save</a></div>
+						<div style="clear:both;"></div>
+				</div>
+				
+				<div class="infoleftbox_add_out"><a href="javascript: profile_addedu(0);"><div class="infoleftbox_add">
+					<p>+</p>
+				</div></a></div>
+			</div>
+
+			<div class="infoleftgroup">Activities
+			
+				<div id="leftgroup_activities">
+					{profile_details_activities}
+				</div>
+				
+				<div class="profileleft_edit" id="peditact" style="display: none;">
+					
+						<div class="infoleftmain"><div class="profileworkedit"><input style="width: 100%;" type="text" id="profileactedit_place69"/></div></div>
+						<div class="infoleftdetail1"><div class="profileworkedit"><input style="width: 100%;" type="text" id="profileactedit_location69"/></div></div>
+						<div class="infoleftdetail2"><div class="profileworkedit"><input style="width: 100%;" type="text" id="profileactedit_description69"/></div></div>
+						<div class="infoleftdetail3"><div class="profileworkedit_time">From: <input style="width: 60px;" type="text" id="profileactedit_fromtime69"/> To: <input style="width: 60px;" type="text" id="profileactedit_totime69"/> <div style="margin-top: 2px; float: right;"> <input type="checkbox" id="profileactedit_present69"/></div> Present School:</div></div>
+						<div style="clear:both;"></div>
+						<div class="profileinplace_delete"><a id="profileactedit_delete69" href="javascript: pwboxedit_detaildeletesel();"/>X</a></div><div class="profileworkedit_buttons"><a style="background: #ffffff; color: #555555; border: 1px solid #dddddd;" id="profileworkedit_cancel69" href="javascript: pwboxedit_detail(-2, 2);"/>Cancel</a><a id="profileworkedit_save69" href="javascript: pwboxedit_detail(-1, 2);"/>Save</a></div>
+						<div style="clear:both;"></div>
+				</div>
+				
+				<div class="infoleftbox_add_out"><a href="javascript: profile_addactivity(0);"><div class="infoleftbox_add">
+					<p>+</p>
+				</div></a></div>
+			</div>
+
+			<div class="infoleftgroup">Music
+				<div class="infoleftboxlist">
+					<div class="infoleftlist"><div class="peditinplace_field" id="peipf_music">{profile_music}</div></div>
+				</div>
+			</div>
+
+			<div class="infoleftgroup">Movies
+				<div class="infoleftboxlist">
+					<div class="infoleftlist"><div class="peditinplace_field" id="peipf_movies">{profile_movies}</div></div>
+				</div>
+			</div>
+
+			<div class="infoleftgroup">TV Shows
+				<div class="infoleftboxlist">
+					<div class="infoleftlist"><div class="peditinplace_field" id="peipf_tvshows">{profile_tvshows}</div></div>
+				</div>
+			</div>
+
+			<div class="infoleftgroup">Books/Authors
+				<div class="infoleftboxlist">
+					<div class="infoleftlist"><div class="peditinplace_field" id="peipf_books">{profile_books}</div></div>
+				</div>
+			</div>
+
+			<div class="infoleftgroup">Idols
+				<div class="infoleftboxlist">
+					<div class="infoleftlist"><div class="peditinplace_field" id="peipf_idols">{profile_idols}</div></div>
+				</div>
+			</div>
+
+			<div class="infoleftgroup">Quiz
+				<div class="infoleftboxlist">
+					<div class="infoleftlist">{profile_quiz}</div>
+				</div>
+			</div>
+
+			
+		</div>
+		<div class="profileinforight">
+		
+			<div class="inforightgroup">
+
+				<div class="infomotto">"<div class="peditinplace_field"  style="display: inline-block;" id="peipfi_motto">{profile_motto}</div>"</div>
+				<div style="clear:both;"></div>
+			
+
+				<div class="inforightbox">
+					
+					<table style="width: 100%;">
+					<tr><td style="vertical-align:top;"><div class="inforightdtitle">Mood</div></td><td><div class="inforightddata"><div class="peditinplace_field" id="peipfi_mood">{profile_mood}</div></td></tr>
+					<tr><td style="vertical-align:top;"><div class="inforightdtitle">Listening To</div></td><td><div class="inforightddata"><div class="peditinplace_field" id="peipfi_listeningto">{profile_listening_to}</div></div></td></tr>
+					<tr><td style="vertical-align:top;"><div class="inforightdtitle">Reading</div></td><td><div class="inforightddata"><div class="peditinplace_field" id="peipfi_reading">{profile_reading}</div></div></td></tr>
+					<tr><td style="vertical-align:top;"><div class="inforightdtitle"><a href="settings.personal">Relationship</a></div></td><td><div class="inforightddata">{profile_relationship}</div></td></tr>
+					<tr><td style="vertical-align:top;"><div class="inforightdtitle">I Like</div></td><td><div class="inforightddata"><div class="peditinplace_field" id="peipfi_ilike">{profile_ilike}</div></div></td></tr>
+					<tr><td style="vertical-align:top;"><div class="inforightdtitle">Interested In</div></td><td><div class="inforightddata"><div class="peditinplace_field" id="peipfi_interestedin">{profile_interestedin}</div><div></td></tr>
+					<tr><td style="vertical-align:top;"><div class="inforightdtitle">Goal of Life</div></td><td><div class="inforightddata"><div class="peditinplace_field" id="peipfi_goaloflife">{profile_goaloflife}</div></div></td></tr>
+					<tr><td style="vertical-align:top;"><div class="inforightdtitle">Up for</div></td><td><div class="inforightddata"><div class="peditinplace_field" id="peipfi_upfor">{profile_upfor}</div></div></td></tr>
+					<tr><td style="vertical-align:top;"><div class="inforightdtitle"><a href="settings.general">Web</a></div></td><td><div class="inforightddata">
+					
+					
+					{profile_websitelist}
+					
+					</div></td></tr>
+					
+					</table>
+					
+				</div>
+			</div>
+			
+			<div class="inforightgroup">
+				<div class="inforightbox">
+					<div style="font-size: 14px;"><b>About Me</b></div>
+					<div style="height: 10px;"></div>
+					<div style="line-height: 140%;">
+					
+						<div class="inforightddata" style="padding: 5px;"><div class="peditinplace_field" id="peipf_aboutme">
+						{profile_aboutme}
+						</div></div>
+
+						<div style="clear:both;"></div>
+					</div>
+					<div style="height: 10px;"></div>
+				</div>
+			</div>
+			
+			<div class="inforightgroup">
+				<div class="inforightbox">
+					<div style="font-size: 14px;"><b>Friends</b></div>
+					<div style="height: 10px;"></div>
+					<div style="padding: 0; margin: 0 0 0 4px; line-height: 100%;">
+					
+						{profile_friendgrid}
+
+						<div style="clear:both;"></div>
+					</div>
+					
+					<div style="height: 10px;"></div>
+				</div>
+			</div>
+			
+			<div class="inforightgroup">
+				<div class="inforightbox">
+					<div style="font-size: 14px;"><b>Favorite Quotes</b></div>
+					<div style="height: 10px;"></div>
+					<div style="line-height: 140%;">
+					
+						<div class="inforightddata" style="padding: 5px;"><div class="peditinplace_field" id="peipf_quotes">
+						{profile_quotes}
+						</div></div>
+
+						<div style="clear:both;"></div>
+					</div>
+					<div style="height: 10px;"></div>
+				</div>
+			</div>
+			
+			
+		</div>
+		<div style="clear:both;"></div>
+		<div style="height: 40px;"></div>
+		<div style="background: #ffffff;">
+			<main.footer>
+		</div>
+	</div></div></div>
+	
+</div>

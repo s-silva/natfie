@@ -1,0 +1,293 @@
+
+body{
+	font: 11px "lucida grande",tahoma,verdana,arial,sans-serif;
+	background: #669933;
+	color: #d4e3c6;
+	padding: 0 0 0 0;
+	margin: 0 0;
+	line-height: 16.3pt;
+	text-align: justify;
+	overflow: hidden;
+}
+
+h1{
+	font-size: 36pt;
+	line-height: 0;
+	padding: 0 0 0 0;
+	color: #ffffff;
+	text-shadow: #546c29 2px 1px 2px;
+}
+
+h2{
+	font-size: 11px;
+	line-height: 0;
+	padding: 0 0 0 0;
+	color: #6c6c3b;
+	text-shadow: #eeeecb 1px 1px 1px;
+}
+
+h3{
+	font-size: 11px;
+	padding: 0;
+	margin: 0;
+	color: #000066;
+}
+
+ul
+{
+	padding-top: 9px;
+}
+
+a{
+	color: #102d96;
+}
+
+a:hover{
+	color: #FF9900;
+}
+
+a:visited{
+	color: #102d96;
+}
+
+#midbox{
+	background: #ffffff;
+	color: #4a4a4a;
+	float: left;
+	position: relative;
+	left: -50%;
+	top: -190px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	margin-top: 40px;
+	-moz-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+}
+
+div.jointop_text{
+	padding-left: 10px;
+	padding-top: 4px;
+}
+
+div.jointop_text a{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+div.jointop
+{
+	color: #ffffff;
+	height: 30px;
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	right: 0xpx;
+	z-index: 100000;
+}
+
+div.loginmid
+{
+	width: 700px;
+	height: 100%;
+	left: 50%;
+	margin-left: -350px;
+	background: url('../../images/blocks/loginshade.png') repeat-y;
+	position: fixed;
+}
+
+
+#login_footer{
+
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	height: 27px;
+}
+
+#login_footer_left{
+	display: block;
+	float: left;
+	padding-left: 10px;
+	padding-top: 3px;
+}
+
+#login_footer_right{
+	display: block;
+	float: right;
+	padding-right: 10px;
+	padding-top: 3px;
+}
+
+#login_footer a{
+	text-decoration: none;
+	color: #d4e3c6;
+}
+
+#login_footer a:hover{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+/* general styles */
+
+
+div.mainpanel
+{
+	width: 500px;
+	padding: 10px;
+	font: 11px "lucida grande",tahoma,verdana,arial,sans-serif;
+	color: #2b2b2b;
+	min-height: 160px;
+}
+
+div.mainpaneltitle
+{
+	height: 23px;
+	color: #ffffff;
+	margin-bottom: 3px;
+}
+
+div.mainpaneltitlein
+{
+	padding-right: 10px;
+}
+
+div.mainpaneltitlein p
+{
+	font-size: 16px;
+	font-weight: bold;
+	color: #ffffff;
+	margin-top: -24px;
+	padding: 0;
+	position: absolute;
+}
+
+div.mainpaneldsc
+{
+	margin-top: 2px;
+}
+
+div.mainpaneldsc p
+{
+	padding: 0;
+	margin: 0;
+	line-height: 120%;
+	text-align: right;
+	color: #959595;
+	font-size: 9pt;
+}
+
+div.mptextbox
+{
+	width: 300px;
+	height: 23px;
+	border: 1px solid #e4e4e4;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	margin-left: 30px;
+	margin-bottom: 4px;
+}
+
+div.mptextbox input
+{
+	border: none;
+	outline-style: none;
+	width: 296px;
+	font: 11px "lucida grande",tahoma,verdana,arial,sans-serif;
+	padding: 2px;
+	height: 17px;
+}
+
+div.captchabox
+{
+	width: 300px;
+	padding: 0;
+	margin: 0;
+	margin-left: 30px;
+	margin-bottom: 4px;
+}
+
+div.generabox
+{
+	width: 300px;
+	padding: 0;
+	margin: 0;
+	margin-left: 30px;
+	margin-bottom: 4px;
+}
+
+div.captchaboxintextbox
+{
+	width: 300px;
+	height: 23px;
+	border: 1px solid #e4e4e4;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+div.captchaboxintextbox input
+{
+	border: none;
+	outline-style: none;
+	width: 296px;
+	font: 11px "lucida grande",tahoma,verdana,arial,sans-serif;
+	padding: 2px;
+	height: 17px;
+}
+
+
+div.mtdefaultbtn
+{
+	padding: 8px 15px 2px 15px;
+	color: #ffffff;
+	text-align: center;
+	background: #82ad36;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	height: 20px;
+	width: auto;
+	cursor: pointer;
+}
+
+div.mtdefaultbtn:hover
+{
+	background: #a2cd56;
+}
+
+div.mtrightbox
+{
+	float: right;
+	margin-top: 0px;
+	margin-top: 10px;
+}
+
+div.mtcaptchaholder
+{
+	margin-top: 4px;
+}
+
+div.mtcaptchabtn
+{
+	display: block;
+	height: 20px;
+	width: 20px;
+	background: #82ad36;
+	cursor: pointer;
+	float: left;
+}
+
+div.mtcaptchabtn:hover
+{
+	background: #a2cd56;
+}
+
+select
+{
+	background: transparent;
+	padding: 5px;
+	font-size: 11px;
+	border: none;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	margin: 0;
+}

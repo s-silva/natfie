@@ -1,0 +1,204 @@
+<div style="position:absolute; top:30px; bottom:0px; left:0px; right:0px; overflow: auto; background: #DBE0E5;">
+	
+	<link href="css/main/profile.css" rel="stylesheet" type="text/css"/>
+	<link href="css/main/dragdealer.css" rel="stylesheet" type="text/css"/>
+	<script type="text/javascript" src="js/main/profile.js"></script>
+	<script type="text/javascript" src="js/main/dragdealer.js"></script>
+	
+	
+	<div id="topsectionouter"><div id="topsectionout"><div id="topsection" class="tsc_{profile_displayps}">
+		
+		
+		<div style="clear:both;"></div>
+		
+		<div id="profiledetailsmain" style='position: relative;'>
+		
+			<div class='profilelongpic_save' id='profilelongpic_save' style='visibility: hidden;'>Save</div>
+			
+			<div class="profilepicset" id="ppicset" style="display: {profile_displayps};">
+				<div id="slidewrapper" style="background: none; height: 261px; margin-bottom: 7px; overflow: hidden;" class="dragdealer"> 
+					{profile_photostripset}
+				</div>
+			</div>
+			
+			<div style="clear:both;"></div>
+			<div style="height: 4px"></div>
+		
+		
+			<div class="dpcover">
+				<img src="data/u{profile_lid}/dp/1.jpg" onerror='failsafe_img(this, 1);'/>
+			</div>
+			
+			<div class="dptext">
+			<div class="profilename">{profile_name}</div>
+			<div class="profiledetail1">{profile_description}</div>
+			hidenulls.birth_day.end
+			<div class="profiledetail2">Birthday: {profile_birth_month} {profile_birth_dayfix}, {profile_birth_year}</div>
+			hidenullsend
+			</div>
+			
+			<div class="profilebuttonsgroup">
+
+				<a style="cursor: pointer;" onclick="javascript: fsendrequest('{profile_id}');" title="Add as a friend"><div class="profilebuttonbox" id="pbadd"><div style="margin: 12px 12px; background: url('images/sheet.png') no-repeat -1px -108px; width: 34px; height: 35px;" ></div></div></a>
+				<a style="cursor: pointer;" onclick="javascript: fsendmessage('{profile_id}', '{profile_lid}', '{profile_name}');" title="Send a private message"><div class="profilebuttonbox" id="pbmsg"><div style="margin: 14px 10px; background: url('images/sheet.png') no-repeat -82px -109px; width: 43px; height: 36px;" ></div></div></a>
+				<a href="bu{profile_id}" title="Read the blog"><div class="profilebuttonbox" id="pbblog"><div style="margin: 10px 11px; background: url('images/sheet.png') no-repeat -126px -109px; width: 39px; height: 39px;" ></div></div></a>
+				<a href="pu{profile_id}" title="View the user's post set"><div class="profilebuttonbox" id="pbposts"><div style="margin: 14px 8px; background: url('images/sheet.png') no-repeat -36px -108px; width: 44px; height: 34px;"></div></div></a>
+			</div>
+		</div>
+	</div></div></div>
+
+		
+	<div class="profileinfocontentouter"><div class="profileinfocontent"><div class="profileinfocontentinner">
+		<div class="profileinfoleft">
+		
+			hidenulls.work.end
+			<div class="infoleftgroup">Work
+				{profile_details_work}
+			</div>
+			hidenullsend
+			
+			hidenulls.edu.end
+			<div class="infoleftgroup">Education
+				{profile_details_edu}
+			</div>
+			hidenullsend
+
+			hidenulls.activities.end
+			<div class="infoleftgroup">Activities
+				{profile_details_activities}
+			</div>
+			hidenullsend
+
+			hidenulls.music.end
+			<div class="infoleftgroup">Music
+				<div class="infoleftboxlist">
+					<div class="infoleftlist">{profile_music}</div>
+				</div>
+			</div>
+			hidenullsend
+
+			hidenulls.movies.end
+			<div class="infoleftgroup">Movies
+				<div class="infoleftboxlist">
+					<div class="infoleftlist">{profile_movies}</div>
+				</div>
+			</div>
+			hidenullsend
+
+			hidenulls.tvshows.end
+			<div class="infoleftgroup">TV Shows
+				<div class="infoleftboxlist">
+					<div class="infoleftlist">{profile_tvshows}</div>
+				</div>
+			</div>
+			hidenullsend
+
+			hidenulls.books.end
+			<div class="infoleftgroup">Books/Authors
+				<div class="infoleftboxlist">
+					<div class="infoleftlist">{profile_books}</div>
+				</div>
+			</div>
+			hidenullsend
+
+			hidenulls.idols.end
+			<div class="infoleftgroup">Idols
+				<div class="infoleftboxlist">
+					<div class="infoleftlist">{profile_idols}</div>
+				</div>
+			</div>
+
+			hidenulls.quiz.end
+			<div class="infoleftgroup">{profile_quiz}
+				
+			</div>
+			hidenullsend
+
+			
+		</div>
+		<div class="profileinforight">
+		
+			<div class="inforightgroup">
+				<div class="inforightbox">
+				
+					hidenulls.motto.end
+					<div class="infomotto">"{profile_motto}"</div>
+					<div style="clear:both;"></div>
+					hidenullsend
+
+			
+					
+					<table>
+					hidenulls.mood.end<tr><td style="vertical-align:top;"><div class="inforightdtitle">Mood</div></td><td><div class="inforightddata">{profile_mood}</div></td></tr>hidenullsend
+					hidenulls.listening_to.end<tr><td style="vertical-align:top;"><div class="inforightdtitle">Listening To</div></td><td><div class="inforightddata">{profile_listening_to}</div></td></tr>hidenullsend
+					hidenulls.reading.end<tr><td style="vertical-align:top;"><div class="inforightdtitle">Reading</div></td><td><div class="inforightddata">{profile_reading}</div></td></tr>hidenullsend
+					hidenulls.relationship.end<tr><td style="vertical-align:top;"><div class="inforightdtitle">Relationship</div></td><td><div class="inforightddata">{profile_relationship}</div></td></tr>hidenullsend
+					hidenulls.ilike.end<tr><td style="vertical-align:top;"><div class="inforightdtitle">I Like</div></td><td><div class="inforightddata">{profile_ilike}</div></td></tr>hidenullsend
+					hidenulls.interestedin.end<tr><td style="vertical-align:top;"><div class="inforightdtitle">Interested In</div></td><td><div class="inforightddata">{profile_interestedin}</div></td></tr>hidenullsend
+					hidenulls.goaloflife.end<tr><td style="vertical-align:top;"><div class="inforightdtitle">Goal of Life</div></td><td><div class="inforightddata">{profile_goaloflife}</div></td></tr>hidenullsend
+					hidenulls.upfor.end<tr><td style="vertical-align:top;"><div class="inforightdtitle">Up for</div></td><td><div class="inforightddata">{profile_upfor}</div></td></tr>hidenullsend
+					hidenulls.web.end<tr><td style="vertical-align:top;"><div class="inforightdtitle">Web</div></td><td><div class="inforightddata">
+					
+					{profile_websitelist}
+					
+					</div></td></tr>hidenullsend
+					</table>
+					
+				</div>
+			</div>
+			
+			hidenulls.aboutme.end
+			<div class="inforightgroup">
+				<div class="inforightbox">
+					<div style="font-size: 14px;"><b>About Me</b></div>
+					<div style="height: 10px;"></div>
+					<div style="padding: 0; margin: 0 0 0 4px; line-height: 140%;">
+					
+						{profile_aboutme}
+						<div style="clear:both;"></div>
+					</div>
+					
+					<div style="height: 10px;"></div>
+				</div>
+			</div>
+			hidenullsend
+			
+			<div class="inforightgroup">
+				<div class="inforightbox">
+					<div style="font-size: 14px;"><b>Friends</b></div>
+					<div style="height: 10px;"></div>
+					<div style="padding: 0; margin: 0 0 0 4px; line-height: 100%;">
+					
+						{profile_friendgrid}
+
+						<div style="clear:both;"></div>
+					</div>
+					
+					<div style="height: 10px;"></div>
+				</div>
+			</div>
+			
+			<div class="inforightgroup">
+				<div class="inforightbox">
+					<div style="font-size: 14px;"><b>Favorite Quotes</b></div>
+					<div style="height: 10px;"></div>
+					<div style="padding: 0; margin: 0 0 0 4px; line-height: 100%;">
+					
+						{profile_quotes}
+						<div style="clear:both;"></div>
+					</div>
+					
+					<div style="height: 10px;"></div>
+				</div>
+			</div>
+			
+			
+		</div>
+		<div style="clear:both;"></div>
+		<div style="height: 40px;"></div>
+		<div style="background: #ffffff;">
+				<main.footer>
+			</div>
+	</div></div></div>
+	
+</div>

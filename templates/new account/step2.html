@@ -1,0 +1,55 @@
+
+				<script type="text/javascript" src="js/join/create.invitation.js"></script>
+			
+				<div class="mainpaneltitle"><div style="color: red; float: left; text-align: left; padding-left: 10px;" id="cnawarning"><data.join.initwarning></div><div class="mainpaneltitlein"><p>New Account</p></div></div>
+				<div class="mainpanel">
+					<div style="height: 10px;"></div>
+					<center>
+					
+					<form method="post" action="php/join/newinvite2.php">
+						
+					<table>
+
+						<tr><td>Security Check:  </td><td>
+					
+						<div class="captchabox">
+					
+								<div id="recaptcha_widget" style="display:none">
+
+									<div id="recaptcha_image"></div>
+									<div class="recaptcha_only_if_incorrect_sol" style="color:red">Incorrect please try again</div>
+
+									<div class="captchaboxintextbox" <data.join.captchastyle>>
+										<input type="text" id="recaptcha_response_field" name="recaptcha_response_field" placeholder="Enter the words above." />
+									</div>
+									
+									<div class="mtcaptchaholder">
+										<a href="javascript:Recaptcha.reload()"><div class="mtcaptchabtn" style="background: url('images/captcha/refresh.png') no-repeat"></div></a>
+										<div class="recaptcha_only_if_image"><a href="javascript:Recaptcha.switch_type('audio')"><div class="mtcaptchabtn" style="background: url('images/captcha/sound.png') no-repeat"></div></a></div>
+										<div class="recaptcha_only_if_audio"><a href="javascript:Recaptcha.switch_type('image')"><div class="mtcaptchabtn" style="background: url('images/captcha/sound.png') no-repeat"></div></a></div>
+										<a href="javascript:Recaptcha.showhelp()"><div class="mtcaptchabtn" style="background: url('images/captcha/help.png') no-repeat"></div></a>
+									</div>
+									
+									<div style="clear:both;"></div>
+
+								</div>
+
+								<script type="text/javascript" src="http://www.google.com/recaptcha/api/challenge?k=6LcIAMwSAAAAAP6GfcLNdOlqFj2Y9xbCSn7svWh5"></script>
+								
+								<noscript>
+									<iframe src="http://www.google.com/recaptcha/api/noscript?k=6LcIAMwSAAAAAP6GfcLNdOlqFj2Y9xbCSn7svWh5" height="300" width="500" frameborder="0"></iframe><br>
+									<textarea name="recaptcha_challenge_field" rows="3" cols="40"></textarea>
+									<input type="hidden" name="recaptcha_response_field" value="manual_challenge">
+								</noscript>
+							<div style="width: 0; height: 0; overflow: hidden;"><input type="submit" id="cnai_send" style="visibility: hidden; float: left;"/></div>
+						</div>
+						
+						</td></tr>
+					</table>
+					
+					</form>
+					</center>
+					<div class="mtrightbox">
+						<div class="mtdefaultbtn" onclick="javascript: cnai_directsend();">Create Account</div>
+					</div>
+				</div>

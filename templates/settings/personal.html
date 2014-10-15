@@ -1,0 +1,21 @@
+
+<div class="settingsp_title">Personal Settings</div>
+
+<div class="settingsp_groupt">Relationship Settings</div>
+
+<div class="settingsp_group">
+
+	<table>
+		<tr class="od"><td style="width: 160px;" valign="top">
+							Mode</td><td><select style='display: none; font-size: 11px;' id='settings_ps_relsel'><option>(None)</option><option>Single</option><option>In a relationship</option><option>Married</option><select><div onclick="javascript: settings_ieditset('settings_ps_relsel', this, 1); settings_psrel_saventf();" style='min-width: 200px; min-height: 20px;' id='settings_ps_relseld'><settings_psvr_rmode></div></td></tr>
+		<tr id='settings_ps_relpersonrow' <settings_psvr_rhide>><td>Person <a href='javascript: settings_psrel_delperson();'>(delete)</a></td><td><div style='cursor: pointer;' onclick="friendsearch_showpopup(this, 1, 'settings_psrel_selfriend');" id="settings_ps_reluserbox"><settings_psvr_rperson></div></td></tr>
+		<tr class="od">	<td>Visible to</td><td>Only Friends</td>
+	</table>
+	
+	<div style='margin-left: 435px; margin-top: 20px;'>
+		<button class='general_settingbuttonblue' onclick="settings_psrel_save();" id='settings_ps_relsave' style='min-width: 50px; visibility: hidden;'>Save</button>
+	</div>
+</div>
+	
+	
+<div style="clear: both; height: 250px;"></div>

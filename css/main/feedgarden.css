@@ -1,0 +1,158 @@
+div.feedg_background
+{
+	background-color:   #efeff2;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+}
+
+div.feedg_content
+{
+	font: 14px 'Segoe UI Light', sans-serif;
+}
+
+div.feedg_fulldcontent
+{
+	margin: 4px 4px 0 150px;
+}
+
+div.feedg_feeddcontent
+{
+	position: relative;
+}
+
+div.feedg_postbox
+{
+	width: 690px;
+	color: #738493;
+	margin-bottom: 20px;
+	margin-right: 3px;
+	float: none;
+	border-bottom: 1px solid #dddddd;
+	display: inline-block;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.feedg_post_write
+{
+	background: #b3b5bc;
+	color: #ffffff;
+	font-size: 20px;
+	padding: 20px 20px 20px 20px;
+	margin-top: 20px;
+}
+
+
+div.feedg_postbox_basics
+{
+	margin-top: 4px;
+}
+
+div.feedg_postbox_basicsdp
+{
+	float: left;
+	padding-top: 4px;
+	padding-right: 8px;
+	margin-left: -146px;
+}
+
+div.feedg_postbox_basicsdp img
+{
+	height: 146px;
+	width: 146px;
+}
+
+div.feedg_postbox_basicstitle
+{
+	color: #3d4350;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+
+div.feedg_postbox_bdsc
+{
+	color: #c3c7cd;
+	font-size: 10px;
+}
+
+div.feedg_postbox_bloc
+{
+	color: #cc9933;
+	font-size: 12px;
+}
+
+div.feedg_postbox_bctr a
+{
+	color: #7da1bf;
+	text-decoration: none;
+}
+
+
+div.feedg_postbox_bct
+{
+	color: #3d4350;
+	padding-bottom: 10px;
+	font-size: 16px;
+	font-weight: normal;
+	font-family: "Segoe UI Light", sans-serif;
+}
+
+div.feedg_postbox_mc
+{
+
+}
+
+
+
+div.feedc_picb
+{
+	padding-bottom: 2px;
+	margin: 5px 1px 1px 1px;
+}
+
+div.feedc_picbvt
+{
+	font-weight: bold;
+	color: #4b8bab;
+	font-size: 11px;
+	text-align: right;
+	margin-right: 8px;
+	padding-top: 2px;
+}
+
+div.feedc_picbvs
+{
+	text-align: right;
+	color: #bbbbbb;
+	margin-right: 8px;
+}
+
+div.feedc_picbvl
+{
+	text-align: right;
+	color: #cd8530;
+	margin-right: 8px;
+}
+
+div.feedc_picm
+{
+	overflow: hidden;
+	position: relative;
+}
+
+div.feedc_picm img
+{
+	width: 100%;
+	visibility: hidden;
+	cursor: pointer;
+}
+
+div.feedc_picb img:hover
+{
+	opacity: 0.8;
+}
+

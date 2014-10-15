@@ -1,0 +1,191 @@
+
+div.cropifull
+{
+	
+}
+
+
+div.cropmboxout
+{
+	padding: 2px;
+	border: 1px solid #dbdbdb;
+	display: block;
+	float: left;
+}
+
+div.cropmbox
+{
+	width: 300px;
+	height: 300px;
+	overflow: hidden;
+	background: #dddddd;
+	display: block;
+}
+
+div.cropmphoto
+{
+	padding: 0;
+}
+
+div.croprtop
+{
+	padding: 0;
+	float: left;
+	margin-left: 4px;
+}
+
+div.scropgroup3
+{
+	padding: 0;
+	width: 90px;
+	height: 50px;
+	margin-top: 86px;
+}
+
+div.scropgroup2
+{
+	padding: 0;
+	width: 90px;
+	height: 50px;
+	margin-top: 4px;
+}
+
+div.scropgroup
+{
+	width: 78px;
+	height: 150px;
+	background: #dfe7ef;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	padding: 6px;
+}
+
+div.cropdp1
+{
+	width: 77px;
+	height: 77px;
+	overflow: hidden;
+	background: #dddddd;
+	display: block;
+	-moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.8);
+	-webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.8);
+}
+
+div.cropdp2
+{
+	width: 41px;
+	height: 41px;
+	overflow: hidden;
+	background: #dddddd;
+	display: block;
+	float: left;
+	margin-top: 5px;
+	margin-right: 5px;
+	-moz-box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.6);
+	-webkit-box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.6);
+}
+
+div.cropdp3
+{
+	width: 27px;
+	height: 27px;
+	overflow: hidden;
+	background: #dddddd;
+	display: block;
+	float: left;
+	margin-top: 5px;
+	-moz-box-shadow: 0px 0px 2px black;
+	-webkit-box-shadow: 0px 0px 2px black;
+}
+
+div.croppreviewtext
+{
+	color: #555555;
+}
+
+div.cropmbutton
+{
+	width: 91px;
+	height: 24px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	text-align: center;
+	cursor: pointer;
+	margin-bottom: 4px;
+	font-size: 11px;
+	padding-top: 2px;
+}
+
+div.bblue
+{
+	background: #5882ac;
+	color: #ffffff;
+}
+
+div.bgreen
+{
+	background: #669933;
+	color: #ffffff;
+}
+
+div.bwhite
+{
+	background: #ffffff;
+	color: #6a6a6a;
+	border: 1px solid #dbdbdb;
+}
+
+div.bblue:hover
+{
+	background: #78a2cc;
+	color: #ffffff;
+}
+
+div.bgreen:hover
+{
+	background: #88aa55;
+	color: #ffffff;
+}
+
+div.bwhite:hover
+{
+	background: #eeeeee;
+	color: #6a6a6a;
+}
+
+
+.file-wrapper {
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+}
+.file-wrapper input {
+  cursor: pointer;
+  font-size: 100px;
+  filter: alpha(opacity=1);
+  -moz-opacity: 0.01;
+  opacity: 0.01;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.file-wrapper .uploadppbutton {
+  background: #5882ac;
+  color: #ffffff;
+  display: inline-block;
+  width: 91px;
+  height: 24px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 4px;
+  font-size: 11px;
+  padding-top: 2px;
+}
+
+.dragme{
+	position:relative;
+	cursor: move;
+}
